@@ -1,0 +1,55 @@
+io-Iron-4320
+io-Silicon-4322
+io-Copper-4324
+io-Cobalt-4321
+io-Neodynium-4323
+io-Sathium-4333
+io-Erestrum-4326
+io-Zascosium-4327
+io-Gold-4346
+io-Pentaxid (refined)-4342
+io-Promethium pellets-4325
+io-Crushed Stone-4328
+io-Stone Dust-4329
+io-Titan-4360
+io-Platinum-4366
+io-Wood planks-4339
+io-MagmaThung-7301/7342/7343
+io-Iron Ore-4297
+io-Silicon Ore-4299
+io-Copper Ore-4301
+io-Cobalt Ore-4298
+io-Neodymium Ore-4300
+io-Sathium Ore-4332
+io-Erestrum Ore-4317
+io-Zascosium Ore-4318
+io-Gold Ore-4345
+io-Pentaxid raw-4341
+io-Titanium Ore-4359
+io-Aluminum Ore-4362
+io-Platinum Ore-4365
+io-Wood logs-4338
+io-Thungsten Ore-7342
+io-Thungsten-7343
+io-Magmacite-7301
+io-Silver Ore-7344
+
+
+
+Components
+----------------------
+c-Cash-4347/4344/5995
+c-Ice-4358
+
+
+
+Eden
+----------------------------
+io-DeOr-7300/7332/7334/7336
+io-DeOr-7338/7358/7359/7360
+io-DeOr-7361/7362
+c-Silver Powder-7345
+c-Magnetic Plate-7312
+c-Ice2-7350/7351/7352/7353
+c-Ice3-7354/7355/7356/7363
+c-RarePowder-7364/7365/7366

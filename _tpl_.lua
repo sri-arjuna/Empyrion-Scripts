@@ -1,0 +1,13 @@
+-- -------------------------------------------------------
+-- XXXXX , according to Mass/Volume
+-- Toggle-able by switch-lever
+-- Written by Sephrajin 2019-2022
+-- -------------------------------------------------------
+-- Description:		
+-- Requires:
+-- * Switch: 		sw_
+-- * Script LCD:	Script:
+-- * Output LCD:	
+-- * Boxes Src:		
+-- * Boxes Trgt:	
+-- -------------------------------------------------------
