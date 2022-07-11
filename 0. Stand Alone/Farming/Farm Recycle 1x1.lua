@@ -10,10 +10,10 @@
 --				Assign signal logic to the following script-LCD's for Power on/off (follow ; default)
 -- ------------------------------------------------------
 
-{{~scroll 13 1}}{{#entitiesbyname '*'}}
+{{~scroll 17 1}}{{#entitiesbyname '*'}}
 {{#each .}}
-<size=3><color=orange>{{Name}}:</color></size>
-<size=2>{{#recycle . 'Loot*'}}
+<size=+2><color=orange>{{Name}}:</color></size>
+<size=-2>{{#recycle . 'Loot*'}}
   min: {{MinPos}}
   max: {{MaxPos}}
   current X: {{X}}
