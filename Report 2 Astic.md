@@ -13,6 +13,11 @@ Beispiel für "was fehlt", gibt string fehler
 	{{/test}}
 	{{/itemlist}}
 
+Solution:
+
+	{{#test Count geq 1}}{{else}}
+
+
 2.
 ----
 
