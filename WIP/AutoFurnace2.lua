@@ -31,6 +31,24 @@
 	{{~set 'PreInput' 'S'}}
 	{{~set 'PreOutput' 'B'}}
 	
+	{{~#items @root.E.S (concat @root.data.PreInput '-*')}}
+			{{~#devices @root.E.S (concat @root.data.PreSwitch '-*') }}
+				{{~#each .}}
+				{{~#split CustomName '-'}}
+					{{set 'InputId' .1}}
+					{{set 'OutputId' .2}}
+					{{set 'InputName' .3}}
+					
+					{{~set 'InputBox' (concat @root.data.PreInput '-' @root.data.InputName '-' @root.Data.InputId)}}
+					{{~set 'OutputBox' (concat @root.data.PreOutput '-' @root.data.InputName '-' @root.Data.OutputId)}}
+				{{/split}}
+				DEBUG :: 0:{{.0}}  // 1:{{.1}} // 2:{{.2}}  // 3:{{.3}}
+				{{/each}}
+			{{/devices}}		
+	{{/items}}
+{{/test}}
+	
+	
 	{{~#devices @root.E.S (concat @root.data.PreSwitch '-*')}}
 		{{~#each .}}
 			{{~#split CustomName '-'}}

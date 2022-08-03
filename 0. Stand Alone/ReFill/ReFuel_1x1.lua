@@ -1,7 +1,7 @@
 -- -------------------------------
 -- Requires:
---          * LCD:            Script:[+18]ReFuelMe
---          * LCD/Projector:  ReFueMe
+--          * LCD:            Script:[+18]ReFuel
+--          * LCD/Projector:  ReFuel
 --          * Dimension:      1x1
 --          * Box:            *Reserve*;*ReFuel*;*Power Output*  (any 1 of these 3 strings will do)
 -- Modified by Sephrajin
