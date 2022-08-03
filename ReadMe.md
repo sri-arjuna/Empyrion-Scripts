@@ -26,7 +26,7 @@ Name Schemes:
 
 Generic:
 --------
-Leading "Box" so they appear "ontop" of the F4 (wifi) list.
+Leading "Box" so they appear "ontop" of the F4 (wifi) list, regardless wether they're assigned to a constructor type or not.
 * Box <what> Input
 * Box <what> Output
 * Box <Special> (like: Drop, Transfer, Reserves, Equipment, and so on)

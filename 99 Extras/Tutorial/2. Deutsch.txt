@@ -1,0 +1,41 @@
+Pack ein paar Sachen in die Kiste hier, wir werden mit diesen Arbeiten.
+Auf der Tafel siehst du ein einfaches Script, was den Inhalt einer Bestimmten Kiste anzeigt.
+
+Der Befehl besteht aus 3 Teilen.
+1. Befehl (#items)
+2. Struktur (E.S.)
+3. Gerät ('ListBox')
+
+Damit sagen wir dem Script es soll alle 'Items' aus 'Entity.Structure' des Gerätes 'ListBox' anzeigen.
+Danach wird, wie immer, der Befehl mit {{/befehl}} (hier {{/items}}) geschlossen.
+
+Dazwischen siehst du Sachen wie:
+* {{id}}
+* {{count}}
+* {{name}}
+* {{i18n key}}
+Dies sind Variablen die wir oft verwenden werden.
+
+Für Abfragen (dazu später mehr), werdet ihr IMMER 'id' brauchen, ausser zum übersetzen mit 'i18n' wo 'key' zuverlässiger ist.
+
+-------------------
+
+Wenn ihr vorher einen 1000er (oder höher) Stapel reingelegt hat, super, ansonsten bitte jetzt machen.
+
+Durch die Verwendung des 'format' Befehls, können wir die Variable die wir ausgeben formatieren.
+Die 0 represäntiert den Hauptteil der Variable, wobei die Zahl nach dem Komma die Anzahl Stellen angiebt welche die Ausgabe nach rechts verschoben werden soll. (als Orientierungs 'hilfe').
+
+Danach kommt der <color=red>(normalerweise) Optionale</color> Teil: ":N1", welcher die Ausgabe auf 1 Stelle nach dem Komma angibt.
+Ändert dies auf ":N0" um ganz Zahlen (integer) mit 1000er Trennzeichen anzuzeigen.
+
+--------------
+
+Mit dem Befehl 'itemlist' könnt ihr eine Struktur (E.S.items) auf eine ID liste überprüfen.
+Anstelle der effektiven IDs (z.B. '537,1234') könnt ihr auch wie dargestellt vorgefertigte ID listen abrufen.
+
+Dies überprüft eine komplette Struktur, nicht nur spezifische Boxen.
+Somit ist es egal ob eine Box einen "CustomName" hat oder nicht (dazu später mehr).
+
+Das ganze ist in einen "scroll" Befehl gepackt, falls eine List länger ist, könnt ihr damit den gesamten Inhalt über scroll anzeigen lassen.
+Die 1. Zahl gibt die anzahl Zeilen an, die 2te Zahl wie oft (jeden X'ten Zyklus) gescrollt werden soll.
+

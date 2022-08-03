@@ -1,0 +1,27 @@
+Um Mathematische operationen durchzuführen, arbeiten wir mit der Variable "Count".
+Operatoren sind:
+- le	== <
+- leq	== <=
+- ge	== >
+- geq	== >=
+- neq	== !=
+
+Der Befehl ist '#test' und der darauf folgende Code wird ausgeführt.
+Optional kann man auch eine oder '{{else}}' Bedingung einfügen um Code auszuführen wenn die Bedingung nicht erfüllt ist.
+
+---------------------------
+
+Jetzt wird es etwas komplizierter.
+Zuerst brauchen wir mindestens 2 verschiedene Items in der Kiste.
+
+Wir setzen 2 Variablen, Temp und Value (Wert) auf 0.
+Dies ist notwendig um einerseits die Variablen zu initialisieren, aber auch um diese für den nächsten Durchlauf des Scripts zurückzusetzen.
+
+Nun fragen wir nochmals den Inhalt der Kiste ab, und addieren den "Count" Wert jedes Items zu der Veriable "Val" hinzu.
+Leider benötigt der "math" befehl selbst einen Temp wert, gibt aber über "." das Resultat vom Befehl "calc" aus.
+
+Der Wert von "calc", also der ".", wird nun wieder als Variable gesetzt, damit der Wert aktualisiert wird.
+Am Schluss geben wir das Total aus.
+
+Beim setzen müsst ihr die Variable immer in Anführungszeichen setzen, weil es ein String ist.
+Innerhalb eines Befehls jedoch ist es eine Variable und demzufolge können die Anführungszeichen weg gelassen werden.

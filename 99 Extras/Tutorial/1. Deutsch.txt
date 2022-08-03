@@ -1,0 +1,72 @@
+Sobald ihr Scripte habt die mit Zeit oder Namen arbeiten, bzw mit {{i18n Key SPRACHE}}, könnt ihr die SPRACHE löschen und dafür ein LCD aufstellen und mit CultureInfo benennen. (ohne das 'Script:' prefix)
+Dieses sollte sich dann automatisch mit folgendem Text/Code füllen:
+{
+  "LanguageTag": "de-CH",
+  "i18nDefault": "Deutsch",
+  "UTCplusTimezone": 2
+}
+
+Hier könnt ihr den LanguageTag z.B. auf de-CH lassen, damit ihr als 1000er Trennzeichen ein Hochkomma habt, oder auf de-DE ändern für den Punkt.
+Ebenso sollten wir in unserem Breitengrad die UTCplusTimezone auf 2 ändern, damit uns die Scripte mit Zeitangabe die korrekte Uhrzeit anzeigen.
+Selbstverständlich steht der Teil i18nDefault für die Sprache in welche mit dem i18n Befehl übersetzt werden soll, ohne dieses LCD, werden Scripte welche zwar den i18n Befehl nutzen, aber keine Sprache angeben, automatisch auf Englisch angezeigt - wenn sie aber eine Sprache angeben, überschreibt dies den Default wert.
+
+-------------------------
+
+Im Regelfall benötigt ihr für jedes Script immer 2 LCD.
+Das erste Script-LCD mit dem Code den ihr kopiert habt oder selber schreibt MUSS immer Script: am Anfang haben, gefolgt von einem Namen, denselben Name gebt ihr für das Ausgabe-LCD an.
+
+Zum Beispiel: ("Decon" ist hier nur ein Namens beispiel!)
+* Script:Decon
+* Decon
+
+Zu beachten ist hierbei, dass ihr die LCDs einer Gruppe hinzufügen müsst, ob ihr dies über Autosort oder mit Custom Groups macht, ist hierbei egal.
+Wo sich das Script (Script:Decon) (auf der Struktur, z.B. BA,CV) befindet ist egal, wo ihr das Ausgabe-Script (Name) hinstellt ist ebenfalls nicht relevant.
+Es ist jedoch durchaus hilfreich/praktikabel, wenn das Ausgabe LCD (Decon) wo steht wo es sinn macht, z.B. bei einem Ein/Ausgang, während das Script LCD (mit dem Code) z.b. im Maschienenraum stehen kann.
+
+---------------
+
+
+Scripte die mit move oder fill arbeiten, sollten nach dem Doppelpunkt immer ein [+ZAHL] habe.
+Wobei die ZAHL für die Anzahl steht, wieviele Zeilen auf der Ausgabe "gespeichert", bzw "oben angehängt" werden sollen.
+Zum Beispiel:
+* Script:[+6]FillMe
+* FillMe
+Dies würde 6 Zeilen des Füll-Befehls anzeigen, ohne dieses [+6] hättet ihr lediglich einen leeren Ausgabe-LCD.
+
+
+--------------
+
+Wenn ihr bei Scripten ein * am Schluss des Namens macht, könnt ihr bei den Ausgabe-LCDs einfach den Name + irgend etwas anstelle des * verwenden.
+
+Zum Beispiel:
+* Script:Zeit*
+* Zeit1
+* Zeit 99
+
+----------------
+
+Syntax
+Jeder Befehl muss geschlossen werden.
+Alle Scriptbefehlen haben geschweifte klammern {{befehl}}, dann kommt Code der Ausgeführt wird, danach wird er geschlossen mit {{/befehl}}.
+Man kann das ganze verschachteln, dann muss er 2te Befehl vor dem 1sten Befehl geschlossen werden.
+
+{{#cmd1 arg1 arg2}}
+	{{#cmd2}}
+		code
+	{{/cmd2}}
+{{/cmd1}}
+
+Grunsätzlich gilt, jeder Scriptbefehl fängt mit '{{#' an.
+Mit 'tilde' kann man die 'neue Zeile' aushebeln, das sieht so aus: '{{~#'
+
+Sachen die eine Eigentschaft ändern, z.b {{bgcolor #hex}} oder das {{else}} sind hierbei die Ausnahme.
+
+--------------
+
+Um Server / oder euren Rechner performance technisch etwas zu schonen, könnt ihr die Script auch dekaktivieren.
+Dies wird durch einfaches ein-/ausschalten des LCD gemacht.
+
+Dazu könnt ihr einfach ein Signal Block nehmen, und diese entweder auf Schalter lassen oder auf Sensor ändern.
+Dort setzt ihr ein TX Signal (im Register: "Signal Logik"), dieses wählt ihr im Drop-Down des LCD aus, und lasst es auf "Follow".
+
+Wenn ihr 2 LCD's hin und her schalten wollt, müsst ihr beim 2ten LCD die Checkbox "I:" auswählen, da das "I" für Invertiert, also "umgekehrt" steht.

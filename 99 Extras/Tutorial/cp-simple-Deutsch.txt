@@ -1,0 +1,24 @@
+Hier seht ihr eines der beliebtesten Script auf dem Gigagaming Server!
+Das "Decon" Script, ein synonym für beides: Dekonstruieren und Recyclen.
+
+Das Script scannt die Umgebung nach anderen Kernen derselben Fraktion (Privat/Fraktion) und listet diese auf.
+Im Ausgabe LCD könnt ihr die Zeichenfolge "Core-Destruct/Recycle-id" kopieren, und bei der Zielstruktur den Kern entsprechend umbenennen.
+
+Das einzige was angepasst werden sollte ist der Kisten Name, meine Empfehlung ist:
+* <color=yellow><b>Loot <SpielerName> 1</b></color>
+
+Dies solltet ihr auf jeder Struktur machen wo ihr dieses Script habt, denn es kann passieren, dass wenn zuviele Spieler zu dicht beisammen sind, dass das Script die Materialen in ein anderes Schiff legt wo die Kiste gleich heisst.
+
+-------------------
+
+
+Ein anderes gern genutztes Script, ist das automatische Auffüllen aller 3 Tanks.
+Dies ist super wenn man CPU und Masse/Volumen spielt, da so massiv an Tanks gespart werden kann.
+
+Zu beachten gilt, dass auf einem Server die Script nicht laufen wenn niemand auf dem Playfield ist, daher ist ein mindestmass an Tanks nach wie vor erforderlich, sollte ihr mal ein paar Tage nicht online gehen könnne.
+
+Der wie beim #move Befehl, könnt ihr bei #fill als 3ten Wert eine Zahl eingeben, nur das es für die Tanks ein Prozent Wert ist, und keine Anzahl an Einheiten.
+
+--------------------------
+
+
