@@ -3,4 +3,6 @@ Status Overview
 
 These scripts will show a scrolling content list, colored according to their **set** value limiters.
 
-[Preview](./Status.jpg)
+![](./Status.jpg)
+
+<img src="Status.jpg" width="200"/>
