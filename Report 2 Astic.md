@@ -21,7 +21,7 @@ Solution:
 2.
 ----
 
-Ids.Ore - Sathium Ore fehlt = 4332
+Ids.Ore - Sathium Ore fehlt = 4332 // SathiumOre
 
 3.
 ----
@@ -31,9 +31,12 @@ When using (concat @Ids.Ingot 'random,ids,...'), only entries from @Ids.Ingot ge
 4.
 ----
 
-Why does it not reckognize strings .2 & .3 - while .1 is the name - BUT does work when .3 is the Name?
+Switch syntax:  <prefix>-<Description>-<OreID>-<IngotID>
 
-Switch syntax:  <prefix>-<Descriton>-<OreID>-<IngotID>
+    - Why does it not reckognize strings .2 & .3 as they remain empty - while .1 is the last string that is displayed 
+	- BUT does work when .3 is the Description which was .1 previously
+
+
 
 Pre-Code:
 
