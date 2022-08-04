@@ -1,0 +1,27 @@
+Sobald ihr mit Geräten oder Items arbeiten wollt, werdet ihr ziemlich sicher mit auch mit ID listen arbeiten wollen.
+Dabei werdet ihr früher oder später ID listen mit einzeln IDs kombinieren wollen.
+
+Dazu nutzen wir (concat var var ....).
+Für Variablen wie @root.data.X braucht ihr keine Anführungszeichen, für fixe Strings aber schon.
+
+Wie ihr hier seht, werden Erze angezeigt sowie das manuell hinzugefühgte Raketengeschütz (alt)".
+
+------------------------------
+
+Auf der anderen Seite kann es sein das ihr mal einen String auseinander nehmen wollt.
+Dies könnt ihr über {{split string zeichen}} machen.
+
+Danach könnt ihr über .0 bis .99 die einzelnen Teile des Splits ansprechen, bzw zuweisen.
+
+Was wir hier machen ist folgendes:
+* Alle Geräte abfragen die mit 4. anfangen
+* Danach jedes Gerät durchlaufen lassen mit {{#each}}
+* Dadurch erhalten wir den {{CustomName}}
+* Welchen wir mit {{#split}} durch ein Leerzeichen aufsplitten.
+* Danach geben wir die (hier) drei Teile einzeln wieder aus über .0 , .1 und .2
+
+-----------------------------
+
+Wir können auch Texte von LCDs lesen und setzen.
+Hier lesen wir den Output von Concat und Split und setzen diese beiden auf den Output rechts.
+
