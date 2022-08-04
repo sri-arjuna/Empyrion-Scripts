@@ -6,6 +6,6 @@ Original Display from [sulusdacor](https://steamcommunity.com/sharedfiles/filede
 
 I just scriptified the seen display but had to split this up into 2 scripts as the display was already reaching the character limit.
 
-![](Cool Cargo.jpg)
+![](CoolCargo.jpg)
 
-![](Cool Cargo2.jpg)
+![](CoolCargo2.jpg)

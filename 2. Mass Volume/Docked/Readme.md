@@ -8,4 +8,4 @@ Just come home with your SV or or HV, dock it, power it off, and it gets refuell
 
 ![](Docked.jpg)
 
-![](Docked 2.jpg)
+![](Docked2.jpg)
