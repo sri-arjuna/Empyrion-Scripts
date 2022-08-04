@@ -4,6 +4,7 @@
 -- Does NOT work with POI's!!!
 -- You could assign the sw_DeconRecylce signal for this script lcd as well.
 -- ------------------------------------------------------
+
 {{#entitiesbyname @root 'Move-*'}}
 {{#each .}}
 {{#items S '*'}}
