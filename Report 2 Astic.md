@@ -31,10 +31,10 @@ When using (concat @Ids.Ingot 'random,ids,...'), only entries from @Ids.Ingot ge
 4.
 ----
 
-Switch syntax:  <prefix>-<Description>-<OreID>-<IngotID>
+Switch syntax:  \<prefix\>-\<Description\>-\<OreID\>-\<IngotID\>
 
-    - Why does it not reckognize strings .2 & .3 as they remain empty - while .1 is the last string that is displayed 
-	- BUT does work when .3 is the Description which was .1 previously
+- Why does it not reckognize strings .2 & .3 as they remain empty - while .1 is the last string that is displayed 
+- BUT does work when .3 is the Description which was .1 previously
 
 
 
