@@ -1,10 +1,10 @@
-Um Mathematische operationen durchzuführen, arbeiten wir mit der Variable "Count".
+Um mathematische Operationen durchzuführen, arbeiten wir mit der Variable "Count".
 Operatoren sind:
-- le	== <
-- leq	== <=
-- ge	== >
-- geq	== >=
-- neq	== !=
+- le	➢ <	(kleiner als)
+- leq	➢ <=	(kleier oder gleich)
+- ge	➢ >	(grösser als)
+- geq	➢ >=	(grösser oder gleich)
+- neq	➢ !=	(nicht gleich)
 
 Der Befehl ist '#test' und der darauf folgende Code wird ausgeführt.
 Optional kann man auch eine oder '{{else}}' Bedingung einfügen um Code auszuführen wenn die Bedingung nicht erfüllt ist.

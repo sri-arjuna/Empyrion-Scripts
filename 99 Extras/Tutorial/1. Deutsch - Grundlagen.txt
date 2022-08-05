@@ -32,7 +32,7 @@ Zum Beispiel:
 * Script:[+6]FillMe
 * FillMe
 Dies würde 6 Zeilen des Füll-Befehls anzeigen, ohne dieses [+6] hättet ihr lediglich einen leeren Ausgabe-LCD.
-
+Da der Befehl nur während der Aktion einen Text anzeigt, durch dieses [+6] erhaltet ihr sozusagen ein "log file".
 
 --------------
 
@@ -50,16 +50,17 @@ Jeder Befehl muss geschlossen werden.
 Alle Scriptbefehlen haben geschweifte klammern {{befehl}}, dann kommt Code der Ausgeführt wird, danach wird er geschlossen mit {{/befehl}}.
 Man kann das ganze verschachteln, dann muss er 2te Befehl vor dem 1sten Befehl geschlossen werden.
 
-{{#cmd1 arg1 arg2}}
-	{{#cmd2}}
-		code
-	{{/cmd2}}
-{{/cmd1}}
-
+Pseudo Script:
+<color=green>   {{#cmd1 arg1 arg2}}
+	   {{#cmd2}}
+		   Ausgabe {{var}}
+	   {{/cmd2}}
+   {{/cmd1}}
+</color>
 Grunsätzlich gilt, jeder Scriptbefehl fängt mit '{{#' an.
-Mit 'tilde' kann man die 'neue Zeile' aushebeln, das sieht so aus: '{{~#'
+Mit 'tilde' (~) kann man auf derselben Zeile schreiben ("{{~#cmd args}}"), während man ohne diese Zeichen, pro Befehl eine neue Zeile generiert/schreibt.
 
-Sachen die eine Eigentschaft ändern, z.b {{bgcolor #hex}} oder das {{else}} sind hierbei die Ausnahme.
+Sachen die eine Eigenschaft ändern, z.b {{bgcolor #hex}} oder das {{else}} sind hierbei die Ausnahme.
 
 --------------
 
@@ -69,4 +70,4 @@ Dies wird durch einfaches ein-/ausschalten des LCD gemacht.
 Dazu könnt ihr einfach ein Signal Block nehmen, und diese entweder auf Schalter lassen oder auf Sensor ändern.
 Dort setzt ihr ein TX Signal (im Register: "Signal Logik"), dieses wählt ihr im Drop-Down des LCD aus, und lasst es auf "Follow".
 
-Wenn ihr 2 LCD's hin und her schalten wollt, müsst ihr beim 2ten LCD die Checkbox "I:" auswählen, da das "I" für Invertiert, also "umgekehrt" steht.
+Wenn ihr 2 LCD's hin und her schalten wollt, weist ihr beiden LCDs dasselbe Signal eines Schalters oder Sensors zu, dann müsst ihr beim 2ten LCD die Checkbox "I:" auswählen, da das "I" für Invertiert, also "umgekehrt" steht.

@@ -1,0 +1,29 @@
+Wir verlassen den Script Teil und kümmern uns nun um das Gestalten des Outputs.
+Die Grundsachen sind sehr einfach - wenn man englisch kann:
+
+Ohne Leerzeichen!
+< b> = Bold = <b>Fett</b>< /b>
+< i> = Italic = <i>Kursiv</i>< /i>
+< u> = Underline = <u>Unterstrich</u>< /u>
+< s> = Strikethrough = <s>Durchgestrichen</s>< /s>
+
+
+<u>Desweitern können wir die Schriftgrösse ändern, und zwar so:</u>
+<i>(auch hier, ohne Leerzeichen!)</i>
+< size=3><size=3>Klein</size>< /size>
+< size=15><size=15>GROSS</size>< /size>
+< size=+3><size=+3>Relativ</size>< /size>
+< size=150%><size=150%>Prozentual</size>< /size>
+
+<u>Ebenso die Farben:</u>
+<i>(auch hier, ohne Leerzeichen!)</i>
+< color=red><color=red>Rot</color>< /color>
+< color=#00ff00><color=#00ff00>Hex (normal)</color>< /color>
+< color=#0f0><color=#0f0>Hex (kurz)</color>< /color>
+
+
+<u>Ausrichtung:</u>
+<i>(auch hier, ohne Leerzeichen!)</i>
+<align=left>< align=left>Links< /align></align>
+<align=center>< align=center>Mitte< /align></align>
+<align=right>< align=right>Rechts< /align></align>

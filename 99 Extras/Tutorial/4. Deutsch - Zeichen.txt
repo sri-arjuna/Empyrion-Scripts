@@ -4,7 +4,7 @@ Dabei werdet ihr früher oder später ID listen mit einzeln IDs kombinieren woll
 Dazu nutzen wir (concat var var ....).
 Für Variablen wie @root.data.X braucht ihr keine Anführungszeichen, für fixe Strings aber schon.
 
-Wie ihr hier seht, werden Erze angezeigt sowie das manuell hinzugefühgte Raketengeschütz (alt)".
+Wie ihr hier seht, werden Erze angezeigt sowie das manuell hinzugefühgte item mit den IDs 557 (Raketengeschätz) und 4444 (Waserkanister) angegeben.
 
 ------------------------------
 
@@ -25,3 +25,10 @@ Was wir hier machen ist folgendes:
 Wir können auch Texte von LCDs lesen und setzen.
 Hier lesen wir den Output von Concat und Split und setzen diese beiden auf den Output rechts.
 
+Bzw dadurch das wir einen Script output LCD haben, wird es automatisch da ausgegeben.
+
+1. Wir geben an, dass wir mit den Geräten "Concat" und "Split" arbeiten wollen, welches die CustomNames von den Ausgabe LCDs der vorherigen Beispiele sind.
+2. Da die Ausgabe länger sein wird, packen wir das ganze wieder in einen {{#scroll}} Befehl.
+3. Wir gehen diese Liste wieder mit {{#each .}} durch
+4. Dann sagen wir, dass wir den Inhalt bekommen wollen mit "{{#gettext .}}", 
+5. und geben dann den inhalt {{.}} unverändert aus.

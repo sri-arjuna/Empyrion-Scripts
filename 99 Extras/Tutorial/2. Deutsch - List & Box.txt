@@ -36,6 +36,7 @@ Anstelle der effektiven IDs (z.B. '537,1234') könnt ihr auch wie dargestellt vo
 Dies überprüft eine komplette Struktur, nicht nur spezifische Boxen.
 Somit ist es egal ob eine Box einen "CustomName" hat oder nicht (dazu später mehr).
 
-Das ganze ist in einen "scroll" Befehl gepackt, falls eine List länger ist, könnt ihr damit den gesamten Inhalt über scroll anzeigen lassen.
-Die 1. Zahl gibt die anzahl Zeilen an, die 2te Zahl wie oft (jeden X'ten Zyklus) gescrollt werden soll.
+Das ganze ist in einen "scroll" Befehl gepackt, falls eine Liste länger ist, könnt ihr damit den gesamten Inhalt über scroll anzeigen lassen.
+Die 1. Zahl gibt die anzahl Zeilen an, die Angezeigt werden können (z.B. 18 bei einem 1x1 LCD), die 2te Zahl wie oft (bzw. wie schnell) gescrollt werden soll.
 
+Es wird immer 1 Zeile gescrollt, dieser Wert ist nicht veränderbar.
