@@ -13,7 +13,7 @@
 --  Original design by sulusdacor, scriptified by Sephrajin
 -- -----------------------------------------------
 
-{{~#devicesoftype E.S. 'AmmoCntr,Container,HarvestCntr'}}{{~#each .}}{{~set 'CN' CustomName}}{{~set 'Vol' 0}}{{~#split CustomName '-'}}{{~set 'DN' .1}}{{~/split}}{{~#math @root.data.Vol '+' (calc ./Device.VolumeCapacity '/' 1000) }}{{~set 'Vol' .}}{{~/math}}{{~#devices @root.E.S (concat @root.Data.DN '_dd')}}{{~#each .}}{{~settextblock .}}	<align=center><line-height=0>
+{{~#devicesoftype E.S. 'AmmoCntr,Container,HarvestCntr'}}{{~#each .}}{{~set 'CN' CustomName}}{{~set 'Vol' 0}}{{~#split CustomName '-'}}{{~set 'DN' .1}}{{~/split}}{{~#math @root.data.Vol '+' (calc ./Device.VolumeCapacity '/' 1000) }}{{~set 'Vol' .}}{{~/math}}{{~#devices @root.E.S (concat @root.Data.DN '_display')}}{{~#each .}}{{~settextblock .}}	<align=center><line-height=0>
 	</line-height>
 	<size=16><pos=-105>━━━━━━<line-height=5.5>
 	<rotate=45><pos=-47>┃<line-height=11>
