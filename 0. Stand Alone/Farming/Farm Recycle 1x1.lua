@@ -24,27 +24,8 @@
   CheckedBlocks: {{CheckedBlocks}}
   RemovedBlocks: {{RemovedBlocks}}
 </size>
-{{/test}}
 {{else}}
 - {{/recycle}}
-{{/each}}
-{{/entitiesbyname}}{{/scroll}}
-
-{{~scroll 13 1}}{{#entitiesbyname '*'}}
-{{#each .}}
-{{#test @root.E.Id neq Id}}
-<size=3><color=orange>{{Name}}:</color></size>
-<size=2>{{#deconstruct . 'Loot*'}}
-  min: {{MinPos}}
-  max: {{MaxPos}}
-  current X: {{X}}
-  current Y: {{Y}}
-  current Z: {{Z}}
-  TotalBlocks: {{TotalBlocks}}
-  CheckedBlocks: {{CheckedBlocks}}
-  RemovedBlocks: {{RemovedBlocks}}
-</size>
-{{else}}
-- {{/deconstruct}}
+{{/test}}
 {{/each}}
 {{/entitiesbyname}}{{/scroll}}

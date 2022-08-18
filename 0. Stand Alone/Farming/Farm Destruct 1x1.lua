@@ -25,5 +25,6 @@
 </size>
 {{else}}
 - {{/deconstruct}}
+{{/test}}
 {{/each}}
 {{/entitiesbyname}}{{/scroll}}

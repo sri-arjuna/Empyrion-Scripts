@@ -7,7 +7,7 @@
 -- Created by Sephrajin
 -- -----------------------------------------
 {{#test (calc @root.CycleCounter '%' 11) eq 0}}
-	{{~set 'TargetBox' 'EssenMedic-Prod-*'}}
+	{{~set 'TargetBox' '*Fridge Production*'}}
 	{{#devicesoftype E.S 'Container;Fridge'}}
 		{{#each .}}
 			{{#if CustomName}}

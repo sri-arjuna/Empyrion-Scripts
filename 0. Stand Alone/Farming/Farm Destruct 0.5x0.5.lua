@@ -11,9 +11,9 @@
 -- ------------------------------------------------------
 
 {{~scroll 13 1}}{{#entitiesbyname '*'}}
-{{#each .}}
+{{#each .}}{{#test @root.E.Id 'neq' Id}}
 <size=3><color=orange>{{Name}}:</color></size>
-<size=2>{{#deconstruct . 'Loot*'}}
+<size=2>{{#deconstruct . '*Loot*'}}
   min: {{MinPos}}
   max: {{MaxPos}}
   current X: {{X}}
@@ -25,5 +25,6 @@
 </size>
 {{else}}
 - {{/deconstruct}}
+{{/test}}
 {{/each}}
 {{/entitiesbyname}}{{/scroll}}

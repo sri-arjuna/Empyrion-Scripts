@@ -1,3 +1,12 @@
+-- ----------------------------
+-- Description
+--
+-- Requires:
+--            Script LCD:         Script:[+8]Harvest
+--            Output LCD:         Harvest
+--            Crew (Human):       Human at console
+--            Fridge:             
+
 {{#blocks E.S  22 128 -51 72 128 -68}}
 	{{~#each .}}
 {{Id}} {{i18n Id}} 
