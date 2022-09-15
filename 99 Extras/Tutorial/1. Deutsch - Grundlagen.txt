@@ -1,30 +1,31 @@
-Sobald ihr Scripte habt die mit Zeit oder Namen arbeiten, bzw mit {{i18n Key SPRACHE}}, könnt ihr die SPRACHE löschen und dafür ein LCD aufstellen und mit CultureInfo benennen. (ohne das 'Script:' prefix)
-Dieses sollte sich dann automatisch mit folgendem Text/Code füllen:
-{
-  "LanguageTag": "de-CH",
-  "i18nDefault": "Deutsch",
-  "UTCplusTimezone": 2
-}
-
-Hier könnt ihr den LanguageTag z.B. auf de-CH lassen, damit ihr als 1000er Trennzeichen ein Hochkomma habt, oder auf de-DE ändern für den Punkt.
-Ebenso sollten wir in unserem Breitengrad die UTCplusTimezone auf 2 ändern, damit uns die Scripte mit Zeitangabe die korrekte Uhrzeit anzeigen.
-Selbstverständlich steht der Teil i18nDefault für die Sprache in welche mit dem i18n Befehl übersetzt werden soll, ohne dieses LCD, werden Scripte welche zwar den i18n Befehl nutzen, aber keine Sprache angeben, automatisch auf Englisch angezeigt - wenn sie aber eine Sprache angeben, überschreibt dies den Default wert.
-
--------------------------
-
 Im Regelfall benötigt ihr für jedes Script immer 2 LCD.
-Das erste Script-LCD mit dem Code den ihr kopiert habt oder selber schreibt MUSS immer Script: am Anfang haben, gefolgt von einem Namen, denselben Name gebt ihr für das Ausgabe-LCD an.
+Das erste Script-LCD mit dem Code den ihr kopiert habt oder selber schreibt MUSS immer <color=yellow>Script:</color> am Anfang haben, gefolgt von einem <i>beschreibenden</i> Namen, denselben Name gebt ihr für das Ausgabe-LCD an.
 
 Zum Beispiel: ("Decon" ist hier nur ein Namens beispiel!)
-* Script:Decon
-* Decon
+* Script:Decon 		(Script-LCD)
+* Decon			(Ausgabe-LCD)
 
-Zu beachten ist hierbei, dass ihr die LCDs einer Gruppe hinzufügen müsst, ob ihr dies über Autosort oder mit Custom Groups macht, ist hierbei egal.
-Wo sich das Script (Script:Decon) (auf der Struktur, z.B. BA,CV) befindet ist egal, wo ihr das Ausgabe-Script (Name) hinstellt ist ebenfalls nicht relevant.
-Es ist jedoch durchaus hilfreich/praktikabel, wenn das Ausgabe LCD (Decon) wo steht wo es sinn macht, z.B. bei einem Ein/Ausgang, während das Script LCD (mit dem Code) z.b. im Maschienenraum stehen kann.
+Das Script-LCD stellt ihr am besten irgendwo auf, wo ihr es nicht die ganze Zeit seht, z.B. im Maschienenraum.
+Im gegensatzt dazu stellt ihr das Ausgabe-LCd dort auf wo es am meisten Sinn macht, z.B. über/an der Kiste oder dem Kühlschrank.
+
+Auf welcher Struktur (BA, CV, HV, SV) ihr ein Script verwendet ist egal, wichtig ist das ihr die LCDs einer Gruppe hinzufügt - achtet dabei darauf ob eure Strukur manuel oder automatisch sortiert wurde!
 
 ---------------
 
+Sobald ihr Scripte habt die mit Zeit oder Namen arbeiten, bzw mit {{i18n Key SPRACHE}}, könnt ihr die SPRACHE löschen und dafür ein LCD aufstellen und mit CultureInfo benennen. (ohne das 'Script:' prefix)
+Dieses sollte sich dann automatisch mit folgendem Text/Code füllen:
+<color=green>{
+  "LanguageTag": "de-CH",
+  "i18nDefault": "Deutsch",
+  "UTCplusTimezone": 2
+}</color>
+
+Über den LanguageTag könnt ihr Formatierungen ändern, z.b. 1000er Trennzeichen.
+Bei i18nDefault ändert ihr die Sprache welche mit <color=yellow>{{i18n key}}</color> angezeigt werden soll.
+UTCplusTimezone dient dazu die Zeitangaben zu korrigieren, da wir hier in D/A/CH bei GMT+2 wohnen, tragen wir hier 2 ein. 
+Andere Länder nutzen ihren jeweiligen Time-Offset.
+
+-------------------------
 
 Scripte die mit move oder fill arbeiten, sollten nach dem Doppelpunkt immer ein [+ZAHL] habe.
 Wobei die ZAHL für die Anzahl steht, wieviele Zeilen auf der Ausgabe "gespeichert", bzw "oben angehängt" werden sollen.
@@ -71,3 +72,8 @@ Dazu könnt ihr einfach ein Signal Block nehmen, und diese entweder auf Schalter
 Dort setzt ihr ein TX Signal (im Register: "Signal Logik"), dieses wählt ihr im Drop-Down des LCD aus, und lasst es auf "Follow".
 
 Wenn ihr 2 LCD's hin und her schalten wollt, weist ihr beiden LCDs dasselbe Signal eines Schalters oder Sensors zu, dann müsst ihr beim 2ten LCD die Checkbox "I:" auswählen, da das "I" für Invertiert, also "umgekehrt" steht.
+
+---------------
+
+Ihr werdet an einigen Stellen <color=yellow>@root</color> sehen.
+Dieses wird verwendet um entweder Variablen abzurufen, oder um wieder auf die Hauptstruktur zuzugreifen wenn ihr innerhalb einer Verschachtelung seit.

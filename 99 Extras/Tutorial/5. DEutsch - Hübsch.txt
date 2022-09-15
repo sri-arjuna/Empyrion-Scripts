@@ -27,3 +27,18 @@ Ohne Leerzeichen!
 <align=left>< align=left>Links< /align></align>
 <align=center>< align=center>Mitte< /align></align>
 <align=right>< align=right>Rechts< /align></align>
+
+---------------------------------------------------------------------
+
+Weitere Sachen zum Aufhübschen sind: 
+<i>Wie immer, OHNE Leerzeichen</i>
+* <pos=40>< pos = 40> Text1
+Text 2 < /pos></pos>
+* <indent=40>< indent = 40> Text1
+Text 2 < /indent></indent>
+
+Ja, auf den ersten Blick scheinen beide das selbe zu machen, ist aber nicht so.
+Indent behält den Einzug bei bis man den 'Tag' wieder schliesst.
+Pos dagegen 'löscht' die Angabe sobald man auf eine neue Zeile kommt.
+
+Dafür kann man mehrere <color=green>Pos</color> formatierungen pro Zeile machen, während nur die letzte <color=green>indent</color> erwähnung aktiv bleibt.

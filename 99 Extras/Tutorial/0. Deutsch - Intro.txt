@@ -1,0 +1,16 @@
+Scripte sind "kurze Texte" (von Empyrion LCD's limitiert auf 2000 Zeichen), welche kleine Aufgaben, bzw kurze Befehlsfolgen ausführen.
+
+Das kann alles möglich sein, von einfacher Uhrzeit, über Spieler infos, was sich in Kisten befindet und vieles mehr.
+
+Sobld ihr mit Items arbeitet, bzw anzeigt, werdet ihr diese Übersetzen wollen, dazu benötigt ihr <color=yellow>{{i18n key}}</color> welches dann die Standartsprache von der CultureInfo nimmt, falls diese nicht vorhanden ist, wird es Englisch angezeigt.
+Dazu mehr mehr bei <color=yellow>Grundlagen 2</color>.
+
+Die Tutorial Beispiele sind so ausgelegt das die jeweils <color=green>grünen</color> Texte bearbeitet werden können/sollen, damit es eine Platform zum experimentieren gibt.
+= Learning by doing!
+
+---------------------------------
+
+Ja es ist etwas viel Information bei Grundlagen.
+Diese dienen dazu, dass man es bei Bedarf immer wieder nachlesen kann.
+
+Es gibt hier eine grobe Übersicht, welche jeweils später genauer erklärt werden.

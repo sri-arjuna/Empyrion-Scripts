@@ -40,3 +40,36 @@ Das ganze ist in einen "scroll" Befehl gepackt, falls eine Liste länger ist, k�
 Die 1. Zahl gibt die anzahl Zeilen an, die Angezeigt werden können (z.B. 18 bei einem 1x1 LCD), die 2te Zahl wie oft (bzw. wie schnell) gescrollt werden soll.
 
 Es wird immer 1 Zeile gescrollt, dieser Wert ist nicht veränderbar.
+
+--------------------
+
+Für den <color=red>Move</color> Befehl, starten wir mit einer einfachen <color=green>items</color> abfrage.
+Aber anstelle der "normalen" Anzeige, haben wir den eigentlichen <color=red>Move</color>-Befehl.
+
+Dieser besteht aus 3 Teilen:
+1. Move
+2. Was (<color=red>.</color>)
+3. Ziel (@root.E.S. 'Kistenname')
+4. <i>optional</i> Anzahl (z.B.: 100)
+
+Bei Erfolg werden die nachfolgenden Zeilen ausgegeben, wie hier den <color=red>{{Count}}</color> und <color=red>{{i18n id}}</color>.
+Wenn ihr nur "innerhalb" der aktuellen Struktur verschiebt, reichen die einfachen <color=yellow>{{Source}} / {{Destination}}</color> angaben.
+Die jeweiligen <color=orange>{{*E.Name}}</color> variationen nutze ich nur (selten) bei verschiebungen auf andere Strukturen.
+
+Wenn ihr jetzt eine <i>optionale</i> Anzahl angegeben habt, und dies erreicht wurde, könntet ihr mit einem <color=green>{{else}}</color> einen weiteren Move-Befehl starten um die Items in eine andere Kiste zu verschieben.
+Dies könnte dann so aussehen:
+<color=green>
+{{items E.S. 'MoveInput'}}
+	{{~#move . @root.E.S 'MoveOutput' 100}}
+{{Count}} // {{i18n Id}} 
+{{SourceE.Name}}::{{Source}} --> {{DestinationE.Name}}::{{Destination}}
+===========
+	{{else}}
+		{{~#move . @root.E.S 'MoveOverfill'}}
+{{Count}} // {{i18n Id}} 
+{{SourceE.Name}}::{{Source}} --> {{DestinationE.Name}}::{{Destination}}
+===========
+		{{/move}}
+	{{/move}}
+{{/items}}
+</color>
