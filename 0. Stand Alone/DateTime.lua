@@ -9,10 +9,12 @@
 --					ändert:			"i18nDefault": "Deutsch"	- Dies ändert die angezeigte Sprache von items
 --					ändert:			"UTCplusTimezone": 2		- Für die korrekte Uhrzeit
 -- -------------------------------------------------------
+
 <align=center><size=+5><i>{{datetime 'HH:mm'}}</i></size>
 <size=-5>{{datetime 'dd.MM.yy'}}</size></align>
 
--- Long
+-- Long version
+-- Only pick one 2 liners (above or below)
 
 <align=center><size=+5><i>{{datetime 'HH:mm:ss'}}</i></size>
 <size=+1>{{datetime 'dd.MM.yyyy'}}</size></align>
