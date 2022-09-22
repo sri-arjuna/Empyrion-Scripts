@@ -14,3 +14,15 @@ Ja es ist etwas viel Information bei Grundlagen.
 Diese dienen dazu, dass man es bei Bedarf immer wieder nachlesen kann.
 
 Es gibt hier eine grobe Übersicht, welche jeweils später genauer erklärt werden.
+
+
+------------------------------------
+
+<color=white><u></color>CultureInfo (ger)</u>
+
+Dies ist ein <i><color=red>interaktives</color></i> LCD!
+
+Die Angaben hier zählen nur auf der jeweiligen Struktur wo dieses LCD steht.
+
+Wenn ihr andere Daten wollt, ändert den Wert in dem LCD.
+<align=right> → → → 

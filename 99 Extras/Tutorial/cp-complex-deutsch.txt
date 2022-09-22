@@ -1,0 +1,18 @@
+Für das Harvest script gibt es einiges zu Beachten.
+
+Was passiert:
+1. Das Script fragt die Blöcke (bzw. die koordinaten der Beete - die Diagonale) ab wo die Pflanzen sind
+2. Für jede Pflanze (each)
+3. Erntet (Harvest) er die Pflanze und gibt sie in den Kühlschrank (Fridge Food Farm), und bezieht Credits aus dem Kühlschrank via des NPC (Koordinate)
+
+Für die Koordinaten:
+1. Console öffnen und "di" eingeben (für DebugInfo)
+2. Auf der <color=red>untersten</color>!! Zeilen haben wir 3 Zahlen in <color=red>Klammern</color>, das sind die Koordinaten der Struktur
+3. Diese benötigen wir um die Fläche des Beetes zu definieren (die Diagonale)
+4. Aber auch für den NPC (Mensch an Konsole; auf dem Kreuz platzieren)
+5. In der EGO-Perspektive geradeaus schauen -> an die Pflanze/Wand, an den NPC
+
+Zu beachten / wichtig:
+1. (genug!) Credits in den Kühlschrank
+2. Das Script kann nur 1 Ebene (mittlere Koordinate) bearbeiten, pro Etage braucht ihr 1 Script.
+3. Denkt daran das die Script-Namen entsprechend angepasst werden da die nicht identisch heissen dürfen (aber Harvest1, Harvest2, usw würde gehen)

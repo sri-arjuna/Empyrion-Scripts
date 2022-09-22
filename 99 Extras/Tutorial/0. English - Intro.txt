@@ -1,0 +1,31 @@
+Scripts are "short texts" (Empyrion limit this to 2000 characters), that are able to perform small tasks, as in, can execute little commands.
+
+This can be almost anything, from a simple time display, basic player information, what contents are with cargo boxes, and heaps more.
+
+As soon you are working with items (names), you should use <color=yellow>{{i18n key}}</color> so you can exchange your scripts with people galaxy wide!
+This will allow people to simply translate item names to their prefered/used language by the use of the LCD "CultureInfo".
+Read more in <color=yellow>Basics 2</color>.
+
+The tutorial is designed so that white text is the <color=white>description</color>, green is for <color=green>code</color> and cyan is the <color=#00ffff>output</color>.
+It is ment that you do edit and change <color=green>code LCDs</color>.
+= Learning by doing!
+
+---------------------------------
+
+Yes, this might be quite a bunch of information for just Basics...
+
+It is also so you can read it again when needed.
+
+It is ment to give a rough overview, but will be explained later in detail!
+
+
+------------------------------------
+
+<color=white><u></color>CultureInfo (eng)</u>
+
+This LCD is <i><color=red>interactive</color></i>!
+
+The values shown here do apply to the 'current' structure only.
+
+If you want different results, change the values here.
+<align=right> → → → 

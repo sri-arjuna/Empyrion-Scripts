@@ -27,8 +27,23 @@ Hier lesen wir den Output von Concat und Split und setzen diese beiden auf den O
 
 Bzw dadurch das wir einen Script output LCD haben, wird es automatisch da ausgegeben.
 
-1. Wir geben an, dass wir mit den Geräten "Concat" und "Split" arbeiten wollen, welches die CustomNames von den Ausgabe LCDs der vorherigen Beispiele sind.
+1. Wir geben an, dass wir mit den Geräten <color=yellow>Concat</color> und <color=yellow>Split</color> arbeiten wollen, welches die <color=yellow>CustomName</color>s von den Ausgabe LCDs der vorherigen Beispiele sind.
 2. Da die Ausgabe länger sein wird, packen wir das ganze wieder in einen {{#scroll}} Befehl.
-3. Wir gehen diese Liste wieder mit {{#each .}} durch
-4. Dann sagen wir, dass wir den Inhalt bekommen wollen mit "{{#gettext .}}", 
-5. und geben dann den inhalt {{.}} unverändert aus.
+3. Wir gehen diese Liste wieder mit <color=yellow>{{#each .}}</color> durch
+4. Dann sagen wir, dass wir den Inhalt bekommen wollen mit <color=yellow>{{#gettext .}}</color>, 
+5. und geben dann den inhalt <color=yellow>{{.}}</color> unverändert aus.
+
+
+---------------------------------
+
+Noch spannender wird es, wenn wir mit Arrays arbeiten wollen.
+
+Doch zuerst, was ist ein Array?
+Im Prinzip ist ein Array eine Art Liste, nur das man hier auf einzelne Einträge direkt zugreifen kann.
+
+Was wir hier tun:
+1. Wir machen 2 Listen
+2. Wir splitten die Num-Liste und setzen es neu damit es als Array gespeichert wird.
+3. Wir splitten die Alpha-Liste und holen uns den entsprechenden Wert aus dem a_Alpha Array.
+4. Den Wert von Alpha kriegen wir über <color=yellow>{{.}}</color> und die Index-Abfrage machen wir über <color=yellow>{{lookup <Var> @index}}</color>
+

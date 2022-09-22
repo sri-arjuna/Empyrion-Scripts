@@ -1,0 +1,15 @@
+Hier sind eine einfache Listen für Erze/Barren und Materialen.
+
+Bei Bedarf könnt ihr einfach bei den "Set-Zeilen" die Grenzwerte anpassen.
+
+---------------------------------
+
+Man kann auch sachen zwischen Strukturen verschieben ohne Move Befehl.
+
+Dazu benötigt man 2 Kisten.
+1. CargoOut@ID    - Irgendwo, die ID muss von der Zielstruktur sein!
+2. CargoIn             - Ziel Struktur
+
+Die ID der Zielstruktur findet ihr über P-Statistik, unten links.
+
+Ändert den der CargoOut-box: von <color=yellow>CargoOut@2172051</color> so das ihr die Zahl durch die ID austauscht die bei euch angezeigt wird.

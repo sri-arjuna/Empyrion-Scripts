@@ -25,3 +25,33 @@ Am Schluss geben wir das Total aus.
 
 Beim setzen müsst ihr die Variable immer in Anführungszeichen setzen, weil es ein String ist.
 Innerhalb eines Befehls jedoch ist es eine Variable und demzufolge können die Anführungszeichen weg gelassen werden.
+
+
+--------------------------------
+
+Zuvor hatten wir Zahlen verglichen, jetzt wollen wir etwas machen wenn es ein bestimmtes Item ist.
+Dies können wir auf 2 Arten machen, entweder über die <color=yellow>ID</color> oder über den <color=yellow>KEY</color>.
+ID ist platzsparender, funktioniert jedoch nur verlässlich pro SaveGame, Key ist etwas länger dafür jedoch "Stabiler" weil es in Vanilla, RE, aber auch mit anderen Custom-Items funkioniert.
+
+Was hier pasiert:
+1. Wir fragen eine Box ab. (ListBox -- 2.1)
+2. Wir nutzen <color=yellow>test</color> um das aktuelle Item zu vergleichen mit einer Liste zu vergleichen.
+3. Wenn das aktuelle Item der ID/dem Key aus der Liste entspricht, <color=green>TRUE/grün</color>
+4. Falls nicht (<color=yellow>else</color>), <color=red>FALSE/red</color>
+5. Danach wird der Test geschlossen und das nächste item wird verglichen.
+
+
+--------------------------------
+
+Den If-Else block können wir auch für komplexere Sachen anwenden, zum Beispiel um den Status eines Schalters zu wechseln.
+
+Was wir hier tun:
+1. Wir nutzen den <color=yellow>CycleCounter</color> (man könnte auch den einfacheren <color=yellow>Intervall</color> nehmen, aber dann bräuchten wir keinen If-Else block)
+2. Dann fragen wir das TX-Signal des Schalters ab
+3. Wenn der schalter an ist (<color=yellow>If SwitchState</color>) ändern wir ihn auf aus, und über das <color=yellow>else</color> statement, halt auch umgekehrt.
+4. Und ändern dessen Wert von True auf False, oder von False auf True.
+5. Das Licht wurde normal über Signale eingestellt und folgt dem Schalter.
+
+PS:
+Der <color=yellow>CycleCounter</color> ist super wenn ihr Scripte machen wollt die Verzögerungen haben sollen und nicht wie <color=yellow>Intervall</color> zwischen 2 Sachen wechseln.
+
