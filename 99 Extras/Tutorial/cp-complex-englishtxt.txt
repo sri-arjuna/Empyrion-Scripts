@@ -1,0 +1,22 @@
+There are several things to consider for the Harvest-Script.
+
+What happens:
+1. The script checks within the passed coordinates wether its a plant and wether it is ready for harvest.
+2. For each block (#each)
+3. Actualy harvests it when ready, puts it in the fridge (Fridge Food Farm), and removes the according amount of Credits from that fridge via the NPC (coordinates)
+
+Regarding the coordinates:
+1. Open the console and type 'di' (for DebugInfo)
+2. On the <color=red>lowest</color>!! line you'll see 3 numbers within round <color=red>brackets</color>, those are the proper coordinates of the strucutre.
+3. We use those to define the squar so we pick 2 places in the diagnole of the blocks most a far.
+4. Same applies to the NPC, allthough we only need 1 coordinate.
+5. To get the proper numbers, be in first person and look straight forward! Not to the floor, not to the ceiling!
+
+Be aware / important
+1. (enough!) Credits in the fridge
+2. It can only work on one level, one floor - same height. For another floor, you will need another script. -- You can use the same fridge though!
+3. Keep in mind that the script names must be unique! However, Harvest1, Harvest2 and so on would work..
+4. There is a certain range-limit to the script, which is about 25-30 blocks, if you exceed this, you'll need to split the area into multiple scripts as well.
+
+---------------------------------------
+

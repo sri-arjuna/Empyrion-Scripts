@@ -1,0 +1,65 @@
+As you are working with items, sooner or later you will want to work with premade ID lists.
+This said, sometimes one wants to combine those lists, or extend them with custom items.
+
+For that, we are using <color=yellow>concat var var</color>.
+As described previously, we can access variables directly via @root.data.X, but we will need single quotes for 'hardcoded' strings.
+
+In this example, we're using the premade ID list for ores, and extend it with a rocket turret (557) and a water jug (4444).
+
+------------------------------
+
+On the other hand, sometimes you will want to split strings into seperate parts.
+This can be done by <color=yellow>{{split string seperator}}</color>.
+
+Each of the single parts can then be used by its 0 index reference, like .0 to .99.
+
+What we do here:
+* Check all device names that start with "4."
+* Parse <color=yellow>{{#each}}</color> of it to 
+* Get their <color=yellow>{{CustomName}}</color>
+* which we then <color=yellow>{{#split}}</color> at the 'space' character.
+* and then work with their individual parts: .0 , .1 and .2
+
+-----------------------------
+
+Furthermore, we can retrieve content that is shown on LCDs/projectors
+In this example, we will get the output of concat and split LCD and will display those on the right screen here.
+
+In this example, this is done by default behaviour of the script naming scheme.
+
+What we do here:
+1. We define that we do want to work with devices named: <color=yellow>Concat</color> and <color=yellow>Split</color>
+2. Since the output will be longer, we'll pack it all into a {{#scroll}} command.
+3. For which we then get their content by working with <color=yellow>{{#each .}}</color> of it.
+4. We then retrieve their content with <color=yellow>{{#gettext .}}</color>
+5. and print it to the default output with <color=yellow>{{.}}</color>
+
+
+---------------------------------
+
+It is even more interesting once we start working with arrays.
+
+But what is an array?
+Basicly, it works like a list, but each entry can be accessed directly, rather than having to work through each item of the list - with lists...
+
+What we do here:
+1. We prepare 2 lists
+2. We split the 'num' list and save it as an array called "a_Num".
+3. We then split the aplpha list and retrieve the value of each entry from the a_Num which has the same <color=yellow>@index</color> then the current item of the Alpha-array (which it had become after splitting the list).
+4. We then print the current alpha-entry <color=yellow>{{.}}</color> and show its according a_Num entry by doing a <color=yellow>{{lookup <Var> @index}}</color>
+
+
+<color=yellow>
+-------------------------------
+
+To go crazy, we can even use different LCD to print different outputs.
+There are 2 different methods, of which one only "allows" 1 line, hence it'll be shown last.
+
+What we do here:
+1. We define the Box name we work with and show something on the "default output" (default naming scheme ; Script:<Name> == <Name>)
+2. We then parse all devices of the structure and search for <color=green>SplitTextUpper</color>
+3. We then print all content of the box but only their names, by using <color=red>setblocktext</color> from the list we get from <color=yellow>Items E.S Box</color>.
+4. We then repeat the steps done in 2 & 3 but for the device (LCD) named <color=green>SplitTextLower</color> and print out the ID value of the same items.
+5. After that, we look for a device named <color=green>OutputSplitExtra</color>
+6. which we only get by parsing it via <color=yellow>{{#each .}}</color>
+7. and then set the current time to a variable so we can print it with a custom string "Yet another string" using <color=yellow>{{settext . 'text'}}</color>, which requires a <color=yellow>{{concat var var}}</color>

@@ -1,0 +1,25 @@
+This is the most used script on our german server: Gigagaming!
+The 'Decon-Script', which as a synonym for both, deconstruct and recycle.
+
+The script scans the surrounding area for structures of the same faction private/faction 
+On the output LCD you can copy-paste the "Core-Destruct/Recycle-id" string, and paste it on the target-structure by renaming its core (has to be sorted!).
+
+The script here uses '*Loot*' which should be adjusted to be more unique, I do recomend:
+* <color=yellow><b>Loot <Player or Ship Name> 1</b></color>
+
+This should be done for each and every structure that uses the decon-scripts, because it might happen that the scripts puts the retrieved items into another box of simliar name (as with just *Loot*), from another structure, like your team mates.
+
+-------------------
+
+
+Another widely used script is the ReFuel one.
+This is awesome while playing with Mass/Volume, and still very convenient whithout, because either way, you dont have to build as many fuel/o2 tanks.
+
+But be aware, that the scripts dont run if noone is on the playfield! 
+So be aware to place enough tanks in case you want to go on vacation for a few days!
+
+Just like the #move command, you can pass a third value to #fill, but for the tanks its a procent value, not a plain amount.
+
+--------------------------
+
+

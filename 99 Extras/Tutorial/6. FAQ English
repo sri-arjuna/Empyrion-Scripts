@@ -1,0 +1,8 @@
+The script does not work!?!
+
+1. The Script-LCD name MUST BE exactly like this "Script:", saying, always start with a capital S!
+2. The name of the script MUST BE <color=yellow>unique</color> sein
+3. Boxes and fridges MUST NOT be named like the script, they must be <color=yellow>unique</color>.
+4. <indent=15>Is there an error message on the output-LCD? 
+<color=green>Yes</color> - Most likely, there are missing brackets {()}, or "follow" what is described in the error message, sorry does not apply always...
+<color=red>No</color> - check 1-3</indent>

@@ -1,0 +1,60 @@
+For mathematical operations, we are using the variable "count" for obvious reasons.
+
+To compare that variable, we have these operators available:
+- le	➢ <	(lesser)
+- leq	➢ <=	(lesser or equal)
+- ge	➢ >	(greater)
+- geq	➢ >=	(greater or equal)
+- neq	➢ !=	(not equal)
+
+The command to initialize the comparison is '#test' followed by the count variable and the 'operator' within quotes and a number to compare against.
+Optionaly, you can also use '{{else}}' if a condition is not reached and then execute a different command or show some other output.
+
+---------------------------
+
+That was a basic condition, lets do some real math...
+If you have not done so yet, please make sure to have at least 2 different items in the "ListBox".
+
+First we set 2 variables, Tmp and Val with the value 0.
+This is required to init the variables as such, so they can be used (compare) and to reset the counter for the next loop.
+
+We now query the content of the box and add the "Count" value of each item to the variable "Val".
+However, the command "math" requires its own temp value, while providing the result via ".", which we are using within the "calc" command.
+
+For "calc" we are simply refering to the variable Val by "@root.data.val" and use regular math expression "+" to add the current value of "Count".
+The result of this is provided by "." which is set again to the variable "Val", so the variable  gets updated.
+
+After the "items"-loop, the result is printed by accessing the @root.data.val
+
+For the 'set' statement, variable names are considered as strings and thus must be within quotes, just like their values.
+When used within a command, they can be used without quotes, but when you just want to show the data, you need to encapsule it by {{@root.data.val}} as shown on the bottom line.
+
+--------------------------------
+
+So we have managed working with numbers, now lets work with items.
+We can do so with 2 different approaches, either by using an <color=yellow>ID</color> or <color=yellow>KEY</color> variables.
+If you work with a lot of items, ID is more 'space saving', but will only work reliable within the current savegame, where as KEY is very stable even accross differnt scenarios, like Vanilla vs. RE and even CustomItems on private servers.
+
+What happens
+1. We query the box. (ListBox -- 2.1)
+2. We use <color=yellow>test</color> to check the current item versus any content of a list.
+3. If the current item its ID/Key is equal to the list, we set the font (color) to <color=green>TRUE/green</color>
+4. If it is not, we enter the <color=yellow>else</color> statement and thus use <color=red>FALSE/red</color> instead.
+5. Then we continue with the items-loop
+
+
+--------------------------------
+
+Since we are now in a casual relation with the If-Else statement, we can start doing more interesting things, like toggle a switch.
+
+What we do:
+1. We are using <color=yellow>CycleCounter</color> (yes, we could use the more simple <color=yellow>Intervall</color>, but this would not catch a manual change of the switch/TX-signal)
+2. We query the TX-Signal of the switch
+3. If the switch is 'on' (<color=yellow>If SwitchState</color>) we change it to 'off', using the <color=yellow>else</color> statement, we would change it in reverse.
+4. This changes the "value" from true to false, or vice versa.
+5. Since the light is asigned to the signal, it will also follow the change of the switch.
+
+PS:
+The command <color=yellow>CycleCounter</color> is awesome if you do scripts that shall have a delay and do not require a 'this or that' (like <color=yellow>Intervall</color> showing the content of the input and/or output fridge).
+Furthermore, it is awesome to save server performance - so best used with move scripts!
+

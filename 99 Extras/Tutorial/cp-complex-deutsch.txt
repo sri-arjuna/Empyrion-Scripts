@@ -16,3 +16,7 @@ Zu beachten / wichtig:
 1. (genug!) Credits in den Kühlschrank
 2. Das Script kann nur 1 Ebene (mittlere Koordinate) bearbeiten, pro Etage braucht ihr 1 Script.
 3. Denkt daran das die Script-Namen entsprechend angepasst werden da die nicht identisch heissen dürfen (aber Harvest1, Harvest2, usw würde gehen)
+4. Es gibt ein Distanz-Limit was circa 25-30 Blöcken entspricht, solltet ihr dies überschreiten müsst ihr die Fläsche ebenfalls in mehrere Scripte aufteilen.
+
+---------------------------------------
+

@@ -1,0 +1,15 @@
+These are simple scripts to list all ores/ingots and other components of your structure.
+
+If needed, you can simply adjust the 'set value' to your needs / preferences.
+
+---------------------------------
+
+This one is a little bit cheaty, as you can send items across the galaxy - without the move command which has a distance limiter.
+
+You need 2 boxes:
+1. CargoOut@ID    - The ID is the actualy number of the targets spawned ingame ID!
+2. CargoIn             - On that target structure, you just need to name a box like this
+
+You find the according ID of the target via the Registry-Controlpanel or by using the P-Statistic screen, on the bottom left.
+
+For testing, change the name of the CargoOut-box: <color=yellow>CargoOut@2172051</color> to the ID of the spawned Script-Tutoral.

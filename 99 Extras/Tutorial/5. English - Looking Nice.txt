@@ -1,0 +1,43 @@
+We are leaving the actual scripting part and take care of makeing the output look nice.
+
+Examples without <space>!
+< b> = Bold = <b>Bold</b>< /b>
+< i> = Italic = <i>Italic</i>< /i>
+< u> = Underline = <u>Underline</u>< /u>
+< s> = Strikethrough = <s>Strikethrough</s>< /s>
+
+
+<u>We can also change font size:</u>
+<i>(again, without <space>!)</i>
+< size=3><size=3>small</size>< /size>
+< size=15><size=15>large</size>< /size>
+< size=+3><size=+3>relative</size>< /size>
+< size=150%><size=150%>Procentual</size>< /size>
+
+<u>Even colors:</u>
+<i>(again, without <space>!)</i>
+< color=red><color=red>red</color>< /color>
+< color=#00ff00><color=#00ff00>Hex (normal)</color>< /color>
+< color=#0f0><color=#0f0>Hex (short)</color>< /color>
+
+
+<u>Alignment:</u>
+<i>(again, without <space>!)</i>
+<align=left>< align=left>left< /align></align>
+<align=center>< align=center>center< /align></align>
+<align=right>< align=right>right< /align></align>
+
+---------------------------------------------------------------------
+
+In addition: 
+<i>(again, without <space>!)</i>
+* <pos=40>< pos = 40> Text1
+Text 2 < /pos></pos>
+* <indent=40>< indent = 40> Text1
+Text 2 < /indent></indent>
+
+Yes, they might seem almost identical, but they are not.
+<color=yellow>Indent</color> keeps the indent until you close the 'tag'.
+On the other hand, <color=yellow>pos</color> clears the 'indent' as soon the output appears on the next line.
+
+That said, you can use multiple <color=green>Pos</color> tags on the same line, where as only the last <color=green>indent</color> tag is applied.

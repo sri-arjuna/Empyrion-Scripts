@@ -1,0 +1,77 @@
+Put some items into the box which with we'll work.
+On the LCD you see a simple script that displays the box its content.
+
+Command is has 3 parts.
+1. Command (#items)
+2. Structure (E.S.)
+3. Devicename ('ListBox')
+
+With this we order the script to list all 'Items' from 'Entity.Structure' within the device 'ListBox'.
+After that, as with any and every other command, we're closing the 'tags' by using {{/command}} (in this case: {{/items}}).
+
+The things we use to display data are:
+* {{id}}
+* {{count}}
+* {{name}}
+* {{i18n key}}
+These are easy the most often used variables.
+
+For other queries (more on that later on), we'll be using always'id', unless you want to prepare it for translation with 'i18n', in which case 'key' is more reliable.
+
+-------------------
+
+If you have not done so already, please make sure to put at least one item with a stack of 1000 or more into the box.
+
+With the use of the classic command 'format', we are able to format how data is shown.
+The '0' is the core of the variable, where as the number after the coma defines the amount of symbols the output should be "moved" to the right.
+
+The optional part of this formating is <color=red>:N1</color>, defines how many digits after the decimal indicator  are shown, 1 in this case.
+
+If you change this to ":N0" you get the 1k indicators.
+
+--------------
+
+With the command 'itemlist' we are able to check a whole structure (E.S.Items) versus an ID list, and will also get 'Zero' results.
+Instead we can also use the IDs directly ('537,1234') in the very same manner.
+
+Again, this (E.S.Items) checks all of the structure, not only a specific box.
+However, it only checks boxes that have a CustomName - as in, not their default name.
+
+The whole thing is then packed into a "scroll" command block, so we can display every line of the list in case the LCD is not large enough.
+The first number defines the amount of lines that shall be shown, the second number how often / fast the scroll should happen.
+
+It will always scroll 1 line, this is hardcoded.
+
+--------------------
+
+Now the most usefull but also most annoying command, <color=red>Move</color>, for which we start with the previously used <color=green>items</color> query.
+But instead of showing the "regular" data, we place the actual <color=red>Move</color>-command.
+
+This consists of 3 parts:
+1. Move
+2. What/Content (<color=red>.</color>)
+3. Destination (@root.E.S. 'Boxname')
+4. <i>optional</i> Amount (z.B.: 100)
+
+On success, the next line will be show, like the <color=red>{{Count}}</color> and <color=red>{{i18n id}}</color>.
+If you use move only "within" the same structure, it is sufficent to use <color=yellow>{{Source}} / {{Destination}}</color> on their own.
+I use their according prefix <color=orange>{{*E.Name}}</color> only when the move command is supposed to involve different structures.
+
+If you are using the <i>optionale</i> amount value, or if the box is full, you can call another move within the <color=green>{{else}}</color> statement, to move the item to yet another box.
+
+This could look like:
+<color=green>
+{{items E.S. 'MoveInput'}}
+	{{~#move . @root.E.S 'MoveOutput' 100}}
+{{Count}} // {{i18n Id}} 
+{{SourceE.Name}}::{{Source}} --> {{DestinationE.Name}}::{{Destination}}
+===========
+	{{else}}
+		{{~#move . @root.E.S 'MoveOverfill'}}
+{{Count}} // {{i18n Id}} 
+{{SourceE.Name}}::{{Source}} --> {{DestinationE.Name}}::{{Destination}}
+===========
+		{{/move}}
+	{{/move}}
+{{/items}}
+</color>

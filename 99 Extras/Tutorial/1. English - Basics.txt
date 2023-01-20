@@ -1,0 +1,85 @@
+In most cases, you always require 2 LCD.
+The first is the Script-LCD containing the code, and must have <color=yellow>Script:</color> as its prefix with a <i>descriptive</i> postfix as name, the same descriptive postfix you use as the output-LCD name.
+
+For example (Decon for the DeConStruct script)
+* Script:Decon 		(Script-LCD)
+* Decon			(Output-LCD)
+
+The actual Script-LCD can be placed anywhere, engine room, below the floors, does not matter.
+Basicly, it does not matter for the Output-LCD, however, it is recomended to place it somewhere meaningful, like near the cockpit for the decon script, or on a box in case of a itemlist script.
+
+Scripts to work on all kind of strucutres (BA, CV, HV, SV), most important part is, that they are added to a group, so you can name them, as they will not work without a unique name.
+
+
+---------------
+
+As soon you're working with "time" or item names, you want to use <color=yellow>{{i18n Key}}</color> 
+Older scripts might use <color=yellow>{{i18n Key} LANGUAGE}</color>, but the LANGUAGE can be removed, as we now can change that value once - for ALL scripts of the structure the script is located.
+To do so, you need another LCD the only 'script' without the "Script:" prefix, just name it: <color=yellow>CultureInfo</color>
+<color=green>{
+  "LanguageTag": "de-CH",
+  "i18nDefault": "Deutsch",
+  "UTCplusTimezone": 2
+}</color>
+
+* LanguageTag this defines things like 1k seperators, like 1'000 vs 1.000.
+* i18nDefault as described above, this actualy changes item names shown in list that use <color=yellow>{{i18n key}}</color> instead of just <color=yellow>{{Name}}</color>
+* UTCplusTimezone fixes time zone and/or summer/winter time changes in certain regions of the world, among time offset to servers.
+* Feel free to change any of these values at the exclamation mark LCD
+
+-------------------------
+
+Scripts that work with move or fill usualy shown they "output" only for a few seconds, thus, you want to use [+NUM] after the "Script:"
+Where NUM is the amount of lines to be shown or appended on top of the current output.
+
+For Example
+* Script:[+6]ReFuel
+* ReFuel
+
+This would show 6 lines of the output of the refuel script, without the [+6] that LCD would remain empty.
+Meaning, with the use of [+NUM] we can create some kind of a log file - for this kind of task.
+
+--------------
+
+We can also use wildcard for Script-LCD's, most usefull if you have a script that should be shown at multiple places, like the time script.
+
+For example:
+* Script:Time*
+* Time1
+* Time 99
+* Time FrontEntry
+
+----------------
+
+Syntax
+Every command '{{#' must also be closed.
+All script orders have winged-brackets {{#command}}, followed by code and variables befor it gets closed {{/command}}.
+As with all coding, you can insert a whole new command set within the parent block of a command.
+
+Pseudo Script:
+<color=green>   {{#cmd1 arg1 arg2}}
+	   {{#cmd2}}
+		   Output {{var}}
+	   {{/cmd2}}
+   {{/cmd1}}
+</color>
+
+with 'tilde' (~ ; {{~#cmd}} ) one can produce output on the same line, while without this, a new line is printed for each output.
+
+Exception to the rule are things like, but not limited to, {{bgcolor #hex}} or {{else}}.
+
+--------------
+
+To save performance (like, but not limited to: move) of your computer and/or server you can disable the scripts.
+This is done by toggeling the Script-LCD to in-/active.
+
+To achieve this, you can asign any TX Signal, from a switch or sensor, to the Script-LCD.
+You set the TX Signal name in the switch/sensor and set the LCD to follow this by selecting that name from the dropdown.
+
+If you want to switch between to different scripts, you can do so by set both Scrpit-LCD to follow the TX signal name of a switch/sensor, while enabling the checkbox "I:" (for invert) next to the dropdown on one of the Script-LCD.
+
+---------------
+
+You will see <color=yellow>@root</color> on several occasions.
+This is used to retrieve the content of Variables, or to get access absolute to the structure the script is located on, while within a cascade.
+(I hope the last part is translated correctly)

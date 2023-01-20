@@ -34,7 +34,7 @@ Mit dem Befehl 'itemlist' könnt ihr eine Struktur (E.S.items) auf eine ID liste
 Anstelle der effektiven IDs (z.B. '537,1234') könnt ihr auch wie dargestellt vorgefertigte ID listen abrufen.
 
 Dies überprüft eine komplette Struktur, nicht nur spezifische Boxen.
-Somit ist es egal ob eine Box einen "CustomName" hat oder nicht (dazu später mehr).
+Aber, dies prüft nur Boxen mit Eigennamen, also keine Standartnamen.
 
 Das ganze ist in einen "scroll" Befehl gepackt, falls eine Liste länger ist, könnt ihr damit den gesamten Inhalt über scroll anzeigen lassen.
 Die 1. Zahl gibt die anzahl Zeilen an, die Angezeigt werden können (z.B. 18 bei einem 1x1 LCD), die 2te Zahl wie oft (bzw. wie schnell) gescrollt werden soll.

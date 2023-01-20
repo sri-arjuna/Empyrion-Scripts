@@ -47,3 +47,17 @@ Was wir hier tun:
 3. Wir splitten die Alpha-Liste und holen uns den entsprechenden Wert aus dem a_Alpha Array.
 4. Den Wert von Alpha kriegen wir über <color=yellow>{{.}}</color> und die Index-Abfrage machen wir über <color=yellow>{{lookup <Var> @index}}</color>
 
+-------------------------------
+
+Wir können aber auch die Ausgabe aufteilen.
+Dazu gibt es 2 verschiedene möglichkeiten, wovon eine Methode jedoch nur 1 Zeie "zulässt", daher wird diese erst am schluss gezeigt.
+
+Was hier passiert:
+1. Wir setzen den Kistenname in eine Variable und zeigen etwas auf der "Standart Ausgabe" an.
+2. Wir gehen die Geräte (devices) der Struktur durch, und suchen <color=green>SplitTextUpper</color>
+3. Dort zeigen wir eine "mehrzeiligen Names-Ausgabe" mittels <color=red>setblocktext</color> von <color=yellow>Items E.S Box</color> an.
+4. Dann wiederholen wir 2 & 3 für <color=green>SplitTextLower</color> und geben dort die ID aus.
+5. Nun suchen wir nach dem Gerät <color=green>OutputSplitExtra</color>
+6. Wir setzen eine Zeitvariable damit wir diese mit
+7. <color=yellow>{{settext . 'text'}}</color>, was leider einen <color=yellow>{{each .}}</color> durchlauf benötigt,
+8. mittels eines <color=yellow>concat</color> zusammen mit einem fixen Text anzeigen lassen können.
