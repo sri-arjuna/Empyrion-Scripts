@@ -10,6 +10,6 @@ Content:
 ========
 
 [Back](..)
-[RE DSEV 1.7 - no MV](1.7 - RE - no MV/DSEV)
-[RE DGW 1.8 - MV](1.8 - RE  - MV/DGW)
-[REA LUX 1.9 - no MV](1.9 - REA - no MV/LUX)
+[RE DSEV 1.7 - no MV](1.7-RE-noMV/DSEV)
+[RE DGW 1.8 - MV](1.8-RE-MV/DGW)
+[REA LUX 1.9 - no MV](1.9-REA-noMV/LUX)
