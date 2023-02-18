@@ -5,7 +5,7 @@
 {{P.PlanetType}}/{{P.PlanetClass}}
  
 <size=-1><color=grey><color=white><u></color>Bioscan Results:</u></color></color></size>
-{{~scroll 3 1}}
+{{scroll 3 1}}
 {{~#each P.Players}}
  - {{Name}}
 {{/each}}
