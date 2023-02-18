@@ -20,7 +20,8 @@
 <size=-2> </size>
 <align=center>{{~concat '<color=#' @root.Data.c1 '>'}}{{bar @root.Data.T 0 @root.data.Vol 10 '▒' (concat '<color=#' @root.Data.c2 '>░</color>')}}</color>
 {{~set 'T' 0}}{{~set 'P' 0}}
-{{#items @root.E.S @root.Data.CN}}{{i18n key}} {{count}}{{/items}}</align>
+{{#items @root.E.S @root.Data.CN}}{{i18n key}} {{count}}
+{{/items}}</align>
 			{{/settextblock}}
 			{{/each}}
 	{{/devices}}
