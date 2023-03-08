@@ -1,0 +1,54 @@
+<line-height=-8>
+╓────╌╌╌╌┄┄┄┄┈┈┈┈<line-height=5>
+║
+║
+╟───╌╌╌┄┄┄┈┈┈<line-height=4.5>
+║
+╟──╌╌┄┄┈┈
+║
+╟─╌┄┈<line-height=9>
+║
+║
+╎
+╎
+╎
+┆
+┆
+┆<color=#1affff>
+<line-height=-106>
+<line-height=10>
+<indent=5><size=+4><i><color={{if P.isPVP}}{{intervall 1 1}}red{{else}}yellow{{/intervall}}{{else}}#33ffff{{/if}}>{{P.Name}}</color></i></size><line-height=8.5>
+<size=-3>⚛ <color=#333333> {{P.PlayfieldType}} // {{P.PlanetClass}} </color> ⚛<line-height=9>
+<color=white>{{datetime 'HH:mm:ss'}}</color></size></i>
+<line-height=-25>
+<line-height=-7>
+<align=center>-=❲<i><color=orange>{{E.Name}}</color></i>❳=-
+<line-height=48>
+<line-height=10>
+<indent=285>
+<align=center><color=white><u></color><size=6>☤ <color=green><i>Bio Scanner:</i></color> ☤</size></u><size=4>
+{{~scroll 4 1 1}}<color=white><line-height=8>
+{{#each P.Players}}
+ [ <i><color=#1affff>{{Name}}</color></i> ]
+{{/each}}</color>
+{{/scroll}}<line-height=10>
+<align=center><color=white><u></color><size=6>✈ <color=yellow><i>Fleet Status:</i></color> ✈</size></u><size=4>
+{{~scroll 4 1 1}}<color=white><line-height=8>
+{{#each E.S.DockedE}}
+ [ <i><color=#1affff>{{Name}}</color></i> ]
+ {{~#if S.IsPowerd}} <color=red>!! ON !!</color>{{/if}}
+{{/each}}</color>
+{{/scroll}}<line-height=10>
+</size></align></indent>
+<line-height=50>
+<align=center><size=3><i>Dynamic HUD with Scripts, by DSEV - Deep Space Exploration Versatiles (Serphajin), to hide/disable it, use P-Menu --> "Toggle Scripts"</i></size></align>
+<line-height=-86>
+<line-height=10>
+Damage {{#use E.S.DamageLevel}}[<color={{test . leq 5}}green{{else}}red{{/test}}>{{bar . 0 100 40 '▰' ' ' }}</color>]{{~format . '{0,8:P2}'}}{{/use}}
+</align>
+<line-height=-160>
+<line-height=4>
+<align=left>
+{{~devices @root.E.S 'HUD_*'}}{{~#each .}}{{~gettext .}}
+{{.}}
+{{~/gettext}}{{/each}}{{~/devices}}
