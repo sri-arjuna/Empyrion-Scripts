@@ -1,0 +1,24 @@
+{{#dialog 'triggerAtrium'
+'DSEV 600i' 
+'Ziel:
+<link="T1"><color=green>◉ PilotSeat</color></link>
+'
+'Exit(Esc)'
+'0' '2' '200' '' 'true' ''  
+}}
+ButtonIdx:{{ButtonIdx}}
+LinkId: {{Link}}
+PlayerInput:{{PlayerInput}}
+Player:{{Player.Name}}
+DialogData:{{DialogData}}
+
+{{#test Link 'eq' 'T1'}}
+    {{#devices @root.E.S 'Bridge_Front'}}
+        {{#use .[0]}}
+DEBUG: Teleport to: X:{{Position.x}} Y:{{~Position.y}} Z:{{Position.z}}
+        {{teleportplayer ../../../Player .}}
+        {{/use}}
+    {{/devices}}
+{{/test}}
+----------------------------------------------------
+{{/dialog}}
