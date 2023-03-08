@@ -7,6 +7,8 @@ A brief overview how to work with them:
     
 	* [Ger](https://github.com/GitHub-TC/EmpyrionScripting#vordefinierte-id-listen)
     * [ENG](https://github.com/GitHub-TC/EmpyrionScripting#predefined-id-lists)
+	* For the most current ID list available you can always check the [SRC](https://github.com/GitHub-TC/EmpyrionScripting/blob/master/EmpyrionScripting/Configuration.cs)
+
 
 That is great for very customized scenarios, either private SP or private servers.
 
