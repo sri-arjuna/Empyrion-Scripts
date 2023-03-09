@@ -2,7 +2,7 @@ Suggested new ID lists
 ======================
 
     Created: 			9. March 2023
-    Submited/Forum:		?? March 2023
+    Submited/Forum:		9. March 2023
 
 Includes keys from Atlantis and Eden, since the ID lists will not return IDs from those if key was not found.
 
@@ -10,9 +10,13 @@ Includes keys from Atlantis and Eden, since the ID lists will not return IDs fro
 INFO
 ----
 Wenn waffen verschoben werden, verlieren sie ihre munition.
+
 Tragisch bei: X-Corp PR-65A Plasma Rifle,
 
+ 
 
+
+ 
 
 NEW: EdenDivers: (WIP, TEMP, NOCH UNSICHER !!!! -- DO NOT ADD YET)
 ----------------
