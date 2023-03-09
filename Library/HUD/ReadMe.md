@@ -23,4 +23,9 @@ As the scripts are now, be aware to add the following:
 * Script:[+3]HUD_1_Cargo
 * Script:[+3]HUD_1_Harvest
 
+The DSEV_HUD lcd/projector should have the following attributes:
+* Height: 1.5
+* Width: 1.75
+
+
 ![](DSEV_HUD.jpg)
