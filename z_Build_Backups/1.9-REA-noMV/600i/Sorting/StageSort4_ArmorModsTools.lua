@@ -31,7 +31,7 @@
 			{{~#split CustomName '-'}}
 				{{~#test Length eq '3'}}
 				{{~#split .2 '/'}}{{set 'Ids' (concat . ',')}}{{/split}}
-				{{~#test ../../../../Id 'in' @IDs.DataPads}}
+				{{~#test ../../../../Id 'in' (concat @IDs.DataPads @IDs.Report @IDs.Hack @IDs.Keycard)}}
 {{~#move ../../../../../. @root.E.S ../../../CustomName}}
 {{/move}}
 					{{/test}}
@@ -41,5 +41,3 @@
 	{{/devices}}
 	{{/items}}
 {{/test}}
-
-
