@@ -2,5 +2,5 @@
 <line-height=4>
 Ammo: <color=#{{@root.data.c1}}>{{format @root.Data.P '{0,0:0}'}}</color>% / {{~#math @root.Data.Vol '/' 1000}}{{format . '{0,0:N1}'}}k{{/math}}
 <color=white>[<color=#{{@root.data.c1}}>{{bar @root.Data.Filled 0 @root.data.Vol 15 '▰' '  ' }}</color>]</color>{{/devicesoftype}}<line-height=3>
-<size=3>{{scroll 9 3 1}}{{~#items E.S. '*Ammo-*'}}
+<size=3>{{scroll 10 3 1}}{{~#items E.S. '*Ammo-*'}}
 ☉ {{format count '{0,0:N0}'}}<pos=23>{{i18n key}}</pos>{{/items}}{{/scroll}}</size>{{/test}}

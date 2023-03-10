@@ -30,7 +30,7 @@
 <size=4><line-height=10>
 Damage {{#use E.S.DamageLevel}}[<color={{test . leq 5}}green{{else}}red{{/test}}>{{bar . 0 100 40 '▰' ' ' }}</color>]{{~format . '{0,8:P2}'}}{{/use}}
 </align>
-<line-height=-125>
+<line-height=-110>
 <indent=265><line-height=8>
 <align=center><color=white><u></color><size=6>☤ <color=green><i>Bio Life Scanner:</i></color> ☤</size></u><size=4>
 <color=white><line-height=6>{{~scroll 2 1 1}}{{#each P.Players}}[ <i><color=#1affff>{{Name}}</color></i> ]
@@ -41,7 +41,8 @@ Damage {{#use E.S.DamageLevel}}[<color={{test . leq 5}}green{{else}}red{{/test}}
 {{/each}}
 {{/scroll}}</color>
 </size></align></indent><line-height=-82>
-<align=left><line-height=8>
-{{~devices @root.E.S 'HUD_*'}}{{~#each .}}{{~gettext .}}
-{{.}}
-{{~/gettext}}{{/each}}{{~/devices}}
+<align=left>
+{{~devices @root.E.S 'HUD_*'}}{{~#each .}}<line-height=8>
+{{~gettext .}}<size=4>{{.}}
+</size>{{~/gettext}}
+{{/each}}{{~/devices}}
