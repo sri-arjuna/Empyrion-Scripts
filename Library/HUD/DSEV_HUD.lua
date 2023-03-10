@@ -22,8 +22,8 @@
 <color=white>{{datetime 'HH:mm:ss'}}</color></size></i>
 <line-height=-39>
 <line-height=7>
-<align=center>-=❲<i><color=orange>{{E.Name}}</color></i>❳=-
-<line-height=173>
+<align=center></color>-=❲<i><color=orange>{{E.Name}}</color></i>❳=-
+<color=#1affff><line-height=173>
 <line-height=10>
 <align=center><size=3><i>Dynamic HUD with Scripts, by DSEV - Deep Space Exploration Versatiles (Sephrajin), to hide/disable it, use P-Menu --> "Toggle Scripts"</i></size></align>
 <line-height=-46>
