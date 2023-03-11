@@ -1,5 +1,5 @@
-{{#dialog 'tTPHangRear'
-'DSEV 600i HET'
+{{#dialog 'tpHangRear'
+'DSEV RE 600i HET'
 '
 <link="T1"><color=green>◉ Bridge Front
 </color></link>
