@@ -1,3 +1,6 @@
+-- Original (maybe: https://steamcommunity.com/sharedfiles/filedetails/?id=2834057918)
+--
+
 <size=150%><sprite name="Engineering_Bar2"></size>
 <line-height=-17px>
 </line-height><align=right>
