@@ -1,5 +1,5 @@
 <size=+5><color=white><u></color>Upgrades</u></size>
-<size=3>
+<size=2>
 Dear Customer
 Thank you for considering the purchase of the <color=white><i>600i</i></color> from <i><color=white>DSEV RE</color> <size=2><color=grey>(a rebuilt from Star Citizen, Origin brand)</color></i></size>.
 
@@ -7,12 +7,16 @@ By default, we provide this vessel with the "Executive" (Antrazit, Gold) color s
 
 
 The <color=white><i>DSEV RE 600i Executive</i></color> is designed to use the following highly recomended updates:
-* Anti-Matter Tank
-* Anti-Matter Warp Drive
-* Regenerative Shield Generator
+* Advanced Core
+* Several Small Constructors to produce reserves on the go
+* Improve Miniguns & Flaks for a more effective self-defence
+* Add more heavy weapons with the remaining CPU for the same reasson.
+* Alternativly, you might want to add more fuel tanks for a longer standbytime in case of holidays/vacations. (Stairs around elevator: Hangar->Storage, at the 'door texture')
 
 This vessel is supposed to allow you for save travels among the stars, serving you as a mobile home and allowing for quiet some small vessels, wether that be HV or SV.
 If you should so much desire to bring this ship into combat, we highly recommend to install an <i>Advanced Core</i> within the <color=white><i>Tree of life</i></color> which thus granting you an additional 1'000'000 CPU to be used for whatever weapons you want to install of the current defence oriented pre-installment.
 
 To get the best benefit of all the luxurious amenities, we also highly recomend to install the module <color=white>EmpyriongScripting</color> by Astic: --> https://github.com/GitHub-TC/EmpyrionScripting/tags
 This will enable the gardener to work (for some credits), keep the clock working, and sort all the things you put into the "<i>Box-Drop In</i>" as well as refuel the vessel as you travel.
+
+We hope you are happy with your purchase and are looking forward to your next visit at our store! o7
