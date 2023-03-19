@@ -1,15 +1,3 @@
--- Description:		Labels (print text / content) all boxes in the shop according to naming scheme
--- Requires:
---			* LCD: Script:Labels (this)
---			* LCD: Script:ShopFW
---
---			* LCD: Stock-LCD-[0-3]
---			* Box: Stock-Item-[0-3]
---			* LCD: Buy-LCD-[0-3]
---			* Box: Buy-Item-[0-3]
-
-
-
 {{~#devices E.S 'Stock-Item-*'}}
 	{{#each .}}
 		{{~set 'CN_Full' CustomName}}
@@ -27,7 +15,6 @@
 <size=-2><pos=1>{{i18n key}}</pos> <pos=70>{{~math}}{{format Count '{0,6:N0}'}}{{/math}}</size></pos>
 				{{else}}
 <color=white><u></color><align=center><i>Vorrat / Stock</i></align></u>
-
 -- > Out of stock <--
 				{{/items}}
 			{{/settextblock}}
@@ -61,6 +48,8 @@ Platinum: <pos=50>{{~math}}{{format Count '{0,6:N0}'}}{{/math}} / {{~math}}{{for
 {{else}}
 Platinum: <pos=50>#!$% !! / {{~math}}{{format @root.data.Price '{0,6:N0}'}}{{/math}}</size></pos>
 {{/test}}
+				{{else}}
+Bezahl-Box // Pay-box
 				{{/items}}
 			{{/settextblock}}
 			{{/each}}
