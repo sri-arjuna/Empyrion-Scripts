@@ -1,0 +1,38 @@
+As you had read in the tutorial, we can work with device names, which we will do here.
+
+In this script we are looking for device that start with "i-, Deco-, c-" (container), we then look for devices with the same name, but have an "x" at the end, which will be their according LCD.
+When we have found these, we are reading the contents of the container and display it on the LCD.
+
+<color=red>Attention:</color> Contrainer Controller are different, this only works with 'regular' containers.
+
+I have got more examples of "Label-Scripts" on Github, incl some with "Progressbar".<color=yellow>
+https://github.com/sri-arjuna/Empyrion-Scripts/tree/main/Library/LCD_Labeling
+</color>
+
+The naming syntax is probably not the most intuitive one, but it is the preparation for the sorting scripts!
+
+Syntax:
+<prefix>-Description-ID
+
+The prefix serves 2 purposes:
+1. Sorted list in the devices menu (P) and F4 list.
+2. When accessing more than 80 devices via script, all of the playfield starts to lag.
+
+
+------------------------
+
+Similar to the script on the right, but for Container Controller only.
+This ones optimized for Mass/Volume oriented output, which is also why it requires 2 scripts.
+
+For one part, because the original design by Sulusdacor almost fills a complete LCD on its own , at last after reading / printing "Name" and "Volume" the script reaches its character limit.
+For another part, the progress bar itself must be rotated so it fullfills the purpose of the original design.
+
+If you want to have content shown here, you must use a 3rd script, unless you want the list to scroll, in which case you will need 1 script per box.
+
+<u><color=green>Script:BoxDisplay</color> = </u>
+looks for devices named "<color=yellow>Box-</color>NAME", based on that results it searched for devices (LCD) that contain "NAME<color=green>_Display</color>", where NAME is a placeholder. NAME (without Box-) will then be shown as Name/Description of that box, as well as the volume it provides.
+
+<u><color=green>Script:BoxBar</color> = </u>
+Identical to Display, but searching for "NAME<color=green>_Bar</color>", which will then calculate how much the bar should be filled.
+
+If you have multiple cargo and ammo boxes, you might want to create a new script and adjust the code to use the prefix "Ammo-" and then also change the caption "Cargo" to "Ammo" which is shown above the NAME.

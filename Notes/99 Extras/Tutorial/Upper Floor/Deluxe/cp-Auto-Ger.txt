@@ -1,0 +1,39 @@
+Wie im Tutorial bereits gesehen habt, kann man auch mit Gerätenamen arbeiten.
+
+In diesem Script suchen wir nach Geräten die mit "i-, Deco-, c-" anfangen, danach suchen wir Geräte (Container) die gleich heissen, jedoch ein "x" am Ende haben, diese werden LCDs sein.
+Wenn diese gefunden wurden, lesen wir den Inhalt der Kiste aus, und zeigen diese auf dem LCD (welche das X am ende haben) an.
+
+<color=red>Achtung:</color> Contrainer Controller sind anders, dies funktioniert nur mit den "normalen" Kisten.
+
+Auf Github habe ich weitere Beispiele von "Label-Scripten" die ich Verwende, inkl solchen mit "Progressbar".<color=yellow>
+https://github.com/sri-arjuna/Empyrion-Scripts/tree/main/Library/LCD_Labeling
+</color>
+
+Die Namensgebung der Kisten mag nicht intuitiv sein, ist aber die Vorbereitung für die Sortier-Scripte!
+
+Syntax:
+<prefix>-Beschreibung-ID
+
+Das Prefix dient 2 Gründen.
+1. Sortierung in der Geräte (P) und F4 Liste.
+2. Wenn über 80 Geräte via Script angesteuert werden, fängt das gesamte Playfield an zu lagen.
+
+
+-----------------
+
+
+Ähnlich wie das Script daneben, aber nur für Container Controller.
+Optimiert für Masse/Volumen Ausgabe über die Progressbar, daher werden auch 2 Scripte benötigt.
+
+Einerseits weil das original Design von Sulusdacor an sich schon fast ein LCD füllt, ist mit dem Auslesen / Anzeigen von "Namen" und "Volumen" das Script am limit.
+Andererseits muss die Progressbar auch gedreht werden um bei diesem Design voll zur geltung zu kommen.
+
+Wer hier noch den Inhalt angezeigt haben will, muss mit einem 3ten Script arbeiten, und wer es gescrollt haben will, muss pro Kiste ein "Inhalts Script" machen, da "Scroll" nicht mit Scripten funktioniert.
+
+<u><color=green>Script:BoxDisplay</color> = </u>
+sucht nach Geräten die mit "<color=yellow>Box-</color>NAME" anfangen, danach werden Geräte (LCD) gesucht die "NAME<color=green>_Display</color>" haben, wobei NAME hier als platzhalter dient. NAME wird dann (ohne Box-) als Name/Beschreibung angezeigt, ebenso wird die Volumen-Grösse ausgelesen und angezeigt.
+
+<u><color=green>Script:BoxBar</color> = </u>
+Identisch wie Display, sucht aber "NAME<color=green>_Bar</color>", und berechnet wie gross der Füllbalken der Progressbar sein soll.
+
+Falls ihr mehrere Cargo und Munitions boxen habt, könnt ihr ein weiteres Script machen, wo ihr dann den Code entsprechend ändert, so dass ihr nach "Ammo-" sucht, und ebenso "Ammo" statt "Cargo" über dem NAME anzeigt.
