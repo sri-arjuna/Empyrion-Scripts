@@ -6,3 +6,26 @@ The script does not work!?!
 4. <indent=15>Is there an error message on the output-LCD? 
 <color=green>Yes</color> - Most likely, there are missing brackets {()}, or "follow" what is described in the error message, sorry does not apply always...
 <color=red>No</color> - check 1-3</indent>
+
+
+--------------------------
+
+
+ID lists are very comfortable if you have to work with multiple items.
+
+They contain the "Key" name of an item and return a list of IDs.
+This works cross-servers!
+
+Some servers occasionaly provide custom items, these 'mess up' the original ID list order, when working with the provided ID lists, this cannot happen.
+Only custom items will not show up in these lists, obviously, but everything else that you expect of that list, will be there.
+
+To show the content of such a list, you can use:
+<color=green>
+    {{@IDs.Ore}}
+</color>
+
+You can also combine the lists, either with other lists or specific ids:
+<color=green>
+    (concat Ids.WeaponHV Ids.WeaponSV Ids.WeaponCV)
+    (concat '1234,5568' Ids.ArmorMod)
+</color>

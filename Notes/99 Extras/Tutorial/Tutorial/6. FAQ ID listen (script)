@@ -1,0 +1,170 @@
+<align=center><size=+5><color=red><u></color>IDs."ListName" Part 1</u>
+</size></align>
+{{scroll 40 3 3}}
+
+<color=green>@IDs.Ore  =</color>
+{{@IDs.Ore}}
+
+
+<color=green>@IDs.Ingot  =</color>
+{{@IDs.Ingot}}
+
+
+<color=green>@IDs.BlockL  =</color>
+{{@IDs.BlockL}}
+
+
+<color=green>@IDs.BlockS  =</color>
+{{@IDs.BlockS}}
+
+
+<color=green>@IDs.Medic  =</color>
+{{@IDs.Medic}}
+
+
+<color=green>@IDs.Food  =</color>
+{{@IDs.Food}}
+
+
+<color=green>@IDs.Ingredient  =</color>
+{{@IDs.Ingredient}}
+
+
+<color=green>@IDs.Sprout  =</color>
+{{@IDs.Sprout}}
+
+
+<color=green>@IDs.Tools  =</color>
+{{@IDs.Tools}}
+
+
+<color=green>@IDs.ArmorMod  =</color>
+{{@IDs.ArmorMod}}
+
+
+<color=green>@IDs.DeviceL  =</color>
+{{@IDs.DeviceL}}
+
+
+<color=green>@IDs.DeviceS  =</color>
+{{@IDs.DeviceS}}
+
+
+<color=green>@IDs.WeaponPlayer  =</color>
+{{@IDs.WeaponPlayer}}
+
+
+<color=green>@IDs.WeaponHV  =</color>
+{{@IDs.WeaponHV}}
+
+
+<color=green>@IDs.WeaponSV  =</color>
+{{@IDs.WeaponSV}}
+
+
+<color=green>@IDs.WeaponCV  =</color>
+{{@IDs.WeaponCV}}
+
+
+<color=green>@IDs.WeaponBA  =</color>
+{{@IDs.WeaponBA}}
+
+
+<color=green>@IDs.AmmoPlayer  =</color>
+{{@IDs.AmmoPlayer}}
+
+
+<color=green>@IDs.AmmoHV  =</color>
+{{@IDs.AmmoHV}}
+
+------------------------
+{{/scroll}}
+
+------------------------------------------------------------------------------------
+
+<align=center><size=+5><color=red><u></color>IDs."ListName" Part 2</u>
+</size></align>
+{{scroll 40 3 3}}
+<color=green>@IDs.AmmoSV  =</color>
+{{@IDs.AmmoSV}}
+
+
+<color=green>@IDs.AmmoCV  =</color>
+{{@IDs.AmmoCV}}
+
+
+<color=green>@IDs.AmmoBA  =</color>
+{{@IDs.AmmoBA}}
+
+
+<color=green>@IDs.Components  =</color>
+{{@IDs.Components}}
+
+
+<color=green>@IDs.EdenComponents  =</color>
+{{@IDs.EdenComponents}}
+
+
+<color=green>@IDs.Armor  =</color>
+{{@IDs.Armor}}
+
+
+<color=green>@IDs.IngredientBasic  =</color>
+{{@IDs.IngredientBasic}}
+
+
+<color=green>@IDs.IngredientExtra  =</color>
+{{@IDs.IngredientExtra}}
+
+
+<color=green>@IDs.IngredientExtraMod  =</color>
+{{@IDs.IngredientExtraMod}}
+
+
+<color=green>@IDs.AmmoAllEnergy  =</color>
+{{@IDs.AmmoAllEnergy}}
+
+
+<color=green>@IDs.AmmoAllProjectile  =</color>
+{{@IDs.AmmoAllProjectile}}
+
+
+<color=green>@IDs.AmmoAllRocket  =</color>
+{{@IDs.AmmoAllRocket}}
+
+
+<color=green>@IDs.WeaponPlayerUpgrades  =</color>
+{{@IDs.WeaponPlayerUpgrades}}
+
+
+<color=green>@IDs.WeaponPlayerEpic  =</color>
+{{@IDs.WeaponPlayerEpic}}
+
+
+<color=green>@IDs.Deco  =</color>
+{{@IDs.Deco}}
+
+
+<color=green>@IDs.DataPads  =</color>
+{{@IDs.DataPads}}
+
+
+<u>M I S S I N G  // T O D O // B U G Y</u>
+
+<color=green>@IDs.Deconstruct  =</color>
+{{@IDs.Deconstruct}}
+
+
+<color=green>@IDs.OreFurnace  =</color>
+{{@IDs.OreFurnace}}
+
+
+<color=green>@IDs.Report  =</color>
+{{@IDs.Report}}
+
+
+<color=green>@IDs.Keycard  =</color>
+{{@IDs.Keycard}}
+
+---------------------
+{{/scroll}}
