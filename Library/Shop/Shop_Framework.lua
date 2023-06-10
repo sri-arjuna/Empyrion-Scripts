@@ -1,6 +1,6 @@
-{{~set 'ItemKey' 'AsgardArmorDonat,Eden_PlasmaRifleXCorp_Ammo,n/a,/n/a'}}
-{{~set 'Amount' '1,1,xA,yA'}}
-{{~set 'Price' '1500,100,xP,xZ'}}
+{{~set 'ItemKey' 'AsgardArmorDonat,Eden_PlasmaRifleXCorp_Ammo,DonatCoreNoCPU,/n/a'}}
+{{~set 'Amount' '1,10,1,0'}}
+{{~set 'Price' '1500,20,8000,0'}}
 
 {{~#split @root.data.ItemKey ','}}{{set 'aKey' .}}{{/split}}
 {{~#split @root.data.Amount ','}}{{set 'aAmount' .}}{{/split}}
@@ -22,7 +22,11 @@
 					{{~#test Key eq 'PlatinumCard'}}
 						{{~#test Count geq @root.data.tPrice}}
 							{{~#move this @root.E.S 'Cash_In' @root.data.tPrice }}
+{{datetime}}::
+1. {{#each @root.E.S.Players}}{{Name}},{{/each}} payed {{@root.data.tPrice}}
 								{{~#move ../../../../this @root.E.S @root.data.Buy @root.data.tAmount}}
+
+2. for {{count}} item: {{lookup @root.data.aKey @index}}, delivered!
 								{{/move}}
 							{{/move}}
 						{{/test}}
@@ -31,24 +35,17 @@
 			{{/test}}
 		{{/test}}
 	{{/items}}
-{{/each}}
-{{/split}}
 
-{{datetime}} Bug starts here
 	{{~#items @root.E.S 'Cash_In'}}
-Debug:	k{{key}} c{{count}}
 		{{~#move this @root.E.S 'Cash_Depot'}}
-Debug:	Deposit
 		{{/move}}
 	{{/items}}
-	
+
 	{{~#items @root.E.S @root.data.Buy}}
 		{{~#test key eq (lookup @root.data.aKey @index)}}
-Debug:	k{{key}} c{{count}}
 			{{~#move this @root.E.S (concat 'Out-' @index)}}
-Debug:	Item to box out
-				{{~set 'CleanUp' '0'}}
 			{{/move}}
 		{{/test}}
 	{{/items}}
-{{/test}}
+{{/each}}
+{{/split}}
