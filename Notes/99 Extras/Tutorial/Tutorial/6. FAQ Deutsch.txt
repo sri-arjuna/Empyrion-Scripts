@@ -27,3 +27,6 @@ Ihr könnte die ID Listen auch kombinieren:
     (concat Ids.WeaponHV Ids.WeaponSV Ids.WeaponCV)
     (concat '1234,5568' Ids.ArmorMod)
 </color>
+
+Falls die Listen nicht zu funktionieren scheinen, seit ihr wahrscheinlich innerhalb einer Funktion / eines Befehls.
+Dann solltet ihr: <color=green>@root.IDs.<NAME></color> verwenden.

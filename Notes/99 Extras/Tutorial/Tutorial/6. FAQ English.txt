@@ -29,3 +29,6 @@ You can also combine the lists, either with other lists or specific ids:
     (concat Ids.WeaponHV Ids.WeaponSV Ids.WeaponCV)
     (concat '1234,5568' Ids.ArmorMod)
 </color>
+
+If the list dont seem to work, you are probably within a function / command.
+In that case, you should use: <color=green>@root.IDs.<NAME></color> instead.
