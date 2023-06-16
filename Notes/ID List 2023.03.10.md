@@ -33,3 +33,32 @@ Concat @IDs.Components (Eden??)
 Concat @IDs.AmmoAllEnergy:			(,Dual Fuel Cell ??)
 --------------------------
 ,Disruptor Charge,
+
+
+Concat @IDs.Food
+----------------
+,Salami,BoiledEgg,
+
+
+
+
+Ribs,
+CannedVegetables,
+CannedMeat,
+Waffles,
+PumpkinCookie,
+PowerBar,
+FriedVegetables,
+Cereals,
+IceCream,
+Ramen,
+Salad,
+Soup,
+BloodyZirax,
+DirtyLegacy,
+Milkshake,
+PromethiumBlue,
+RumMixer,
+HWSFish,
+Eden_FishJerky,
+--
