@@ -37,3 +37,28 @@ sucht nach Geräten die mit "<color=yellow>Box-</color>NAME" anfangen, danach we
 Identisch wie Display, sucht aber "NAME<color=green>_Bar</color>", und berechnet wie gross der Füllbalken der Progressbar sein soll.
 
 Falls ihr mehrere Cargo und Munitions boxen habt, könnt ihr ein weiteres Script machen, wo ihr dann den Code entsprechend ändert, so dass ihr nach "Ammo-" sucht, und ebenso "Ammo" statt "Cargo" über dem NAME anzeigt.
+
+
+------------
+
+
+Dies ist ein <i>ReFill</i> Script, da es deine Arbeitskiste (Workbox) wieder mit allem <i>auffüllt</i> was du zum craften benötigst.
+
+Wir setzen den Namen der <color=green>Workbox</color> in der ersten Zeile, stellt dabei sicher das ihr farbcodes von Kistennamen mit drin habt, oder nutz Sternchen (*) als Platzhalter.
+
+Wir nutzen dann verschiedene ID-Listen um bestimmte Beträge von diesen in die Workbox zu verschieben.
+Seit euch der Stackgrössen und der Volumen Einstellung eures Spiels / auf eurem Server bewusst.
+
+Das Script von allen benannten Kisten auf der Struktur die entsprechenden Items herausnehmen und bis zu Betrag X in die Workbox / Arbeitskiste schieben.
+
+Ebenfalls nutzt das Script den <color=green>CycleCounter</color> damit der code nur jeden X'ten Zyklus ausgeführt wird.
+Dies ist um die Serverlast zu reduzieren und damit die gesamte (mögliche) Serverperformance zu erhöhen.
+Bitte nutzt maximal eine 2 falls ihr eine grosse Fraktion mit riesiger Produktion habt, ansonsten empehle ich ein Wert von "minimal" 7.
+
+Wie ihr seht werden auch ID Listen von Eden verwendet, dies hat keinen Einfluss auf ein Vanilla-Spiel, da hierbei einfach leere Listen zurück kommen, und dadurch auch keine Items verschoben werden.
+
+
+-----
+
+
+Identisch wie das andere <i>Refill</i> Script für die Arbeitsbox, aber für alle Sachen die im Lebensmittel Konstruktor erstellt werden.

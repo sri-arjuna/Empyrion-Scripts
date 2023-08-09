@@ -36,3 +36,28 @@ looks for devices named "<color=yellow>Box-</color>NAME", based on that results 
 Identical to Display, but searching for "NAME<color=green>_Bar</color>", which will then calculate how much the bar should be filled.
 
 If you have multiple cargo and ammo boxes, you might want to create a new script and adjust the code to use the prefix "Ammo-" and then also change the caption "Cargo" to "Ammo" which is shown above the NAME.
+
+
+-----------
+
+
+This is a <i>ReFill</i>-Script, as it <i>refill</i>'s your workbox with all materials and components required to produce all the things you need and want.
+
+We're setting the <color=green>Workbox</color> Name in the first line, make sure to either include color codes or use an asterix (*) as place holder.
+
+We then use different ID-Lists to put a certain amount of each into the workbox.
+Be aware of stack sizes and volume settings in your gameplay / on the server.
+
+This script will grab items from any named box on the same structure and move them into the workbox until amount X is reached.
+
+It also uses the <color=green>cycle</color> command to execute the code only every X'th cycle.
+This is to reduce server usage and thus increases server performance.
+Use a minimum of 2 if you have a big factory, or you can increase the delay if you're only using 1 constructor to a value of.. idk... 7 or something.
+
+As you see, this code also uses ID lists with Eden items, this has no impact during a vanilla gameplay, as those lists will return nothing, thus, no items will be moved.
+
+
+-----
+
+
+Same as the <i>Refill</i> script for the workbox, but for all things that are created within a "Food Processor".
